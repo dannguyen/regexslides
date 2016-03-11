@@ -1,3 +1,15 @@
+<div class="meta">
+  <h3 class="title">
+  Search all the files in all the folders
+  </h3>
+
+<pre class="exp shell">
+ack -ho '\w{10,}' <span class="pink b">shakespeare/</span> |
+    sort | uniq -c | sort -n
+</pre>
+</div>
+
+
 <div id="player-allshakespeare-longwords"></div>
 <script>
   asciinema_player.core.CreatePlayer(
@@ -6,7 +18,7 @@
           {
              autoPlay: false, speed: 2, fontSize: '19px',
              theme: 'monokai',
-             poster: "data:text/plain,$ ack -ho '\w{15,}' | sort | uniq -c | sort -n"
+             poster: "data:text/plain,$ ack -ho '\w{10,}' | sort | uniq -c | sort -n"
            }
         );
 </script>

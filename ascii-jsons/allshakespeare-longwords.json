@@ -1,8 +1,8 @@
 {
   "version": 1,
   "width": 98,
-  "height": 20,
-  "duration": 45.222822,
+  "height": 15,
+  "duration": 20.0,
   "command": "/bin/bash",
   "title": "",
   "env": {
@@ -45,7 +45,7 @@
     ],
     [
       0.000032,
-      "5,}'"
+      "0,}'"
     ],
     [
       1.511719,
@@ -143,16 +143,24 @@
       1.813818,
       "\r\n"
     ],
-    [
-      0.309457,
-      "   1 Anthropophaginian\r\n   1 Enfranchisement\r\n   1 Northamptonshire\r\n   1 Northumberlands\r\n   1 Notwithstanding\r\n   1 Particularities\r\n   1 Praeclarissimus\r\n   1 Unreconciliable\r\n   1 acknowledgement\r\n   1 circumscription\r\n   1 distemperatures\r\n   1 distinguishment\r\n   1 excommunication\r\n   1 honorificabilitudinitatibus\r\n   1 incomprehensible\r\n"
+[
+      0.718840,
+      "  22 Shrewsbury\r\n  22 ambassador\r\n  22 flattering\r\n  22 proclamation\r\n  22 punishment\r\n  22 unkindness\r\n  23 CANTERBURY\r\n  24 Antipholus\r\n  24 BRAKENBURY\r\n  24 expectation\r\n  24 expedition\r\n  24 proceeding\r\n  25 allegiance\r\n  25 altogether\r\n  26 destruction\r\n  26 intelligence\r\n  26 prosperous\r\n  27 Lieutenant\r\n  27 conditions\r\n"
     ],
     [
-      0.000020,
-      "   1 indistinguishable\r\n   1 interchangement\r\n   1 interrogatories\r\n   1 misconstruction\r\n   1 misinterpreting\r\n   1 particularities\r\n   1 perpendicularly\r\n   1 transformations\r\n   1 uncompassionate\r\n   1 uncomprehensive\r\n   2 Flibbertigibbet\r\n   2 extraordinarily\r\n   2 prognostication\r\n   2 superstitiously\r\n   2 undistinguishable\r\n   3 impossibilities\r\n   4 interchangeably\r\n   5 enfranchisement\r\n  12 Gloucestershire\r\n  21 notwithstanding\r\n"
+      0.000026,
+      "  27 instruments\r\n  27 sovereignty\r\n  27 sufferance\r\n  27 treacherous\r\n  28 commonwealth\r\n  28 preparation\r\n  28 proportion\r\n  28 recompense\r\n  29 perfection\r\n  30 conclusion\r\n  31 government\r\n  31 henceforth\r\n  31 imagination\r\n  32 Westmoreland\r\n  32 Winchester\r\n  32 resolution\r\n  33 conference\r\n  33 discretion\r\n  33 satisfaction\r\n  34 enterprise\r\n  34 possession\r\n  35 PLANTAGENET\r\n  35 handkerchief\r\n  36 circumstance\r\n  37 afterwards\r\n  38 Coriolanus\r\n  39 WINCHESTER\r\n  39 acquaintance\r\n  39 countrymen\r\n  39 entertainment\r\n  39 impossible\r\n  39 lieutenant\r\n  40 acquainted\r\n  40 affections\r\n  40 banishment\r\n  40 difference\r\n  41 instrument\r\n  42 Plantagenet\r\n  43 displeasure\r\n  43 friendship\r\n  44 Soothsayer\r\n  44 complexion\r\n  46 disposition\r\n  47 ARCHBISHOP\r\n  47 Andronicus\r\n  47 LYSIMACHUS\r\n  47 reputation\r\n  48 ALCIBIADES\r\n  48 gentlewoman\r\n  49 LONGAVILLE\r\n  51 commission\r\n  54 particular\r\n  55 GUILDENSTERN\r\n  55 Northumberland\r\n  55 counterfeit\r\n  61 HOLOFERNES\r\n  61 countenance\r\n  62 Chamberlain\r\n  64"
     ],
     [
-      0.000448,
+      0.000017,
+      " remembrance\r\n  66 SATURNINUS\r\n  67 Bolingbroke\r\n  70 ROSENCRANTZ\r\n  71 Servingman\r\n  74 melancholy\r\n  74 yourselves\r\n  75 WESTMORELAND\r\n"
+    ],
+    [
+      0.000008,
+      "  79 Buckingham\r\n  85 TOUCHSTONE\r\n 100 understand\r\n 108 NORTHUMBERLAND\r\n 112 BOLINGBROKE\r\n 123 conscience\r\n 126 honourable\r\n 139 Attendants\r\n 146 Gloucester\r\n 173 themselves\r\n 184 BUCKINGHAM\r\n 195 ANTIPHOLUS\r\n 202 ANDRONICUS\r\n 208 CORIOLANUS\r\n 596 GLOUCESTER\r\n"
+    ],
+    [
+      0.000309,
       "bash-3.2$ "
     ]
   ]

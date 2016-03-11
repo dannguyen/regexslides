@@ -1,6 +1,16 @@
 
-<h4>Frequency count of the <u>fourth word</u> in:<br>
-"I am [<em>a</em> or <em>an</em> or <em>the</em>] <em>[something]</em>"</h4>
+
+<div class="meta">
+<h4 class="title">Frequency count of the <u>fourth word</u> in:<br>
+"I am <span class="pink">[<em>a</em> or <em>an</em> or <em>the</em>]</span> <em>[something]</em>"</h4>
+
+
+
+<pre class="exp shell">ack -h 'I am <span class="pink b">(?:a|an|the)</span> (\w+)' \
+          --output '$1' shakespeare/ |
+      sort | uniq -c | sort -n
+</pre>
+</div>
 
 <pre>
    3 son

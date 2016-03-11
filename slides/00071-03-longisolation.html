@@ -1,3 +1,17 @@
+
+<div class="meta">
+  <h3 class="title">Just show the match (i.e. the long word)
+  </h3>
+  <div class="description">
+  Sometimes we only want to see what we've matched, not the entire line that the match is in.
+  </div>
+  <ul class="pseudo">
+    <li>Use the <code>-o</code> flag to specify that we don't want to print the entire line.</li>
+  </ul>
+  <pre class="exp">ack -o '\w{10,}' romeoandjuliet</pre>
+</div>
+
+
 <div id="player-rjlongwords-isolated"></div>
 <script>
   asciinema_player.core.CreatePlayer(

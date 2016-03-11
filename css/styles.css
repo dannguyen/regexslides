@@ -1,4 +1,9 @@
-
+.reveal ul{
+  display: block;
+}
+.reveal li{
+  font-size: 23px;
+}
 
 .reveal h1 code,
 .reveal h2 code,
@@ -37,39 +42,60 @@ p.excerpt{
 
 .reveal .pseudo{
   margin-top: 5px;
-  font-size: 18px;
+  margin-bottom: 1.0em;
+  margin-left: 0;
 }
 
 .reveal .pseudo li{
   display: inline;
-  padding-left: 20px;
+  padding-left: 15px;
+    font-size: 19px;
+
 }
+
+.reveal .pseudo li code{
+  padding: 1px;
+  margin: 0;
+}
+
 
 .reveal .pseudo li:first-child{
   padding-left: 0px;
+  margin-left: 0px;
 }
 
 .reveal .pseudo li:before{
-  content: '\2022';
+  content: '\00a0 \2022 \00a0';
 }
 
 
 .reveal pre{
   width: 100%;
+   background: #444;
+   padding: 8px;
+
+}
+
+.reveal pre.truncate{
+    overflow: hidden;
+  word-wrap: normal;
+white-space: pre;
+
 }
 
 .reveal pre.exp{
-   background: #444;
-   padding: 10px 0px 10px 35px;
    margin: 4px auto 8px;
    font-size: 24px;
    line-height: 1.1em;
-   width: 100%;
+   padding: 10px 0px 10px 35px;
 
 }
 
+
+
 .reveal .meta .title{
   font-size: 35px;
+  margin-bottom: 2px;
 }
 
 
@@ -80,13 +106,49 @@ p.excerpt{
 }
 
 
+.reveal .meta .exp{
+  font-size: 28px;
+  margin-top: 0.5em;
+  border: thin solid white;
+    background: #444;
+
+}
+
+
 .reveal .exp.big{
   font-size:30px;
 }
+
+
 
 
 .center{
   text-align: center;
   margin-left: auto;
   margin-right: auto;
+}
+
+
+.meta .description{
+  font-size: 20px;
+  font-style: italic;
+  color: #ddd;
+}
+
+.pink{
+  color: deeppink !important;
+}
+
+.b{
+  font-weight: bold !important;
+
+}
+
+pre.shell.exp:before{
+  content: '$ \00a0';
+}
+
+
+.reveal .subtitle{
+  font-size: 24px;
 }

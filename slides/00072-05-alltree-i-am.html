@@ -1,7 +1,14 @@
-
-<h4>Frequency count of
+<div class="meta">
+<h4 class="title">Frequency count of
 <u>just the third word</u> in
-"I am <em>[something]</em>"</h4>
+"I am <em class="pinnk">[something]</em>"</h4>
+
+
+<pre class="exp shell">ack -h 'I am <span class="pink b">(\w+)</span>' <span class="pink b">--output '$1'</span> shakespeare/ |
+    sort | uniq -c | sort -n
+</pre>
+
+</div>
 
 <pre>
   22 too

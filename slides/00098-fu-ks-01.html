@@ -1,21 +1,25 @@
 <div class="meta">
   <h3 class="title">
-   Does the <em>Mashantucket Pequot</em> know how to spell "Mashantucket"?
+   Just how many <em>F*UCK</em>s have been given to 2015-2016 campaigns?
   </h3>
 <ul class="pseudo">
   <li>Search for <code>FU</code></li>
   <li>followed by any word character</li>
   <li>followed by a <code>K</code> character</li>
 </ul>
+
   <pre class="exp shell">
-ack -o 'MASH[A-Z]+CKET' indiv-contributions.txt |
-  sort | uniq -c
+ack -o 'FU\wK' indiv-contributions.txt | sort | uniq -c
 </pre>
 
 </div>
 
 
-<pre class="big">
-   2 MASHANFUCKET
-  56 MASHANTUCKET
+
+<pre>
+   5 FUCK
+  52 FULK
+ 207 FUNK
+   4 FURK
+  10 FUSK
 </pre>

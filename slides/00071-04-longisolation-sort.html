@@ -1,3 +1,17 @@
+
+<div class="meta">
+  <h3 class="title">Sort the list of long words
+  </h3>
+  <div class="description">
+Rearrange each printed line in alphabetical order.
+  </div>
+  <ul class="pseudo">
+    <li>Use good old Unix pipes, <code>|</code>, to send a line of text from one program to the other </li>
+  </ul>
+  <pre class="exp shell">ack -o '\w{10,}' romeoandjuliet <span class="pink b"> | sort</span></pre>
+</div>
+
+
 <div id="player-rj-longwords-isolated-count"></div>
 <script>
 

@@ -1,4 +1,19 @@
-<h4>sort | count uniques</h4>
+
+<div class="meta">
+  <h3 class="title">How many unique words are there, and how many of each?
+  </h3>
+  <div class="description">
+Only show each unique line once, along with how many times it appeared in the output.
+  </div>
+  <ul class="pseudo">
+    <li>Use another pipe, <code>|</code>, to connect another program </li>
+    <li>Why do we have to <em>sort</em> before we count uniques? Because that's how helplessly dumb your computer (and every computer) is.</li>
+
+  </ul>
+  <pre class="exp shell">ack -o '\w{10,}' romeoandjuliet | sort <span class="pink b"> | uniq -c</span></pre>
+</div>
+
+
 
 
 <pre>

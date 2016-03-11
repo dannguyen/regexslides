@@ -1,9 +1,24 @@
+
+<div class="meta">
+  <h3 class="title">Looking for <code>love</code>
+    at the command-line with <code>ack</code>
+  </h3>
+  <ul class="pseudo">
+    <li>Type in the name of the program <code>ack</code></li>
+    <li>Type in the pattern <code>'love'</code></li>
+    <li>Type in the filename <code>romeoandjuliet</code></li>
+  </ul>
+  <pre class="exp">ack 'love' romeoandjuliet</pre>
+</div>
+
+
+
 <div id="player-rjlove"></div>
 <script>
   asciinema_player.core.CreatePlayer(
           'player-rjlove', 'ascii-jsons/rj-love.json',
           {
-             autoPlay: true, speed: 2, fontSize: '19px',
+             autoPlay: false, speed: 2, fontSize: '19px',
              theme: 'monokai'
            }
         );

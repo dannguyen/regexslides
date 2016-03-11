@@ -1,0 +1,44 @@
+<div class="meta">
+  <h3 class="title">
+   Get a list of Trump's <em>possible</em> committee IDs
+  </h3>
+  <div class="description">
+    We want to find which of Trump's <em>possible</em> committees have actually received campaign contributions.
+  </div>
+<ul class="pseudo">
+<li>In the committees file...</li>
+  <li>Match all lines that have <code>TRUMP</code> somewhere</li>
+  <li>Pipe them into another ack to match the first one-or-more word characters starting from the beginning of each line.</li>
+  <li>(i.e. the committee id)</li>
+  <li>Output just the matches into a new text file, <code class="pink">trumpc.txt</code></li>
+</ul>
+
+<pre class="exp shell">
+ack 'TRUMP' committees.txt |
+    ack -o <span class="pink">'^\w+' > trumpc.txt</span>
+</pre>
+</div>
+
+
+<pre>
+C00420679
+C00580100
+C00583716
+C00585836
+C00586826
+C00587360
+C00588319
+C00590398
+C00591008
+C00591115
+C00594564
+C00605691
+C00609073
+C00610105
+C00610907
+C00611020
+C00611160
+C90015728
+
+
+</pre>

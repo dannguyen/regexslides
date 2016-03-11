@@ -16,10 +16,17 @@
       <div class="reveal">
           <div class="slides">
 <section class="slide">
-<h2>Regular Regular Expression Exercises</h2>
-<h2>for Regular People</h2>
+<h2>Regular
+<span class="pink">Regular Expression</span>
+Exercises</h2>
+<h3>for Regular People</h3>
+<a href="http://regex.danwin.com/">http://regex.danwin.com/</a>
 </section>
 <section class="slide">
+<h2>Regular
+<span class="pink">Regular Expression</span>
+Exercises</h2>
+<h3>for Regular People</h3>
 <a href="http://regex.danwin.com/">http://regex.danwin.com/</a>
 </section>
 <section class="slide">
@@ -67,15 +74,9 @@ Chorus  Now old desire doth in his death-bed lie,
 </script>
 </section>
 <section class="slide">
-<h2>What we can't do with regular expressions</h2>
+<h2>Regular Expression basics</h2>
 
-<ul>
-  <li>Math</li>
-  <li>Databasing</li>
-  <li>Visualization</li>
-  <li>Logic</li>
-
-</ul>
+<h4>(what can we match?)</h4>
 </section>
 <section class="slide">
 <div class="title">
@@ -329,9 +330,17 @@ Gizmodo:
 </section>
 <section class="slide">
 
+<h2>Treat data like text</h2>
+
+<h4>(because that's what it is)</h4>
+</section>
+<section class="slide">
+
   <h3 class="title">
-    <code>grep</code>
-    (or <code>ack</code> or <code>ag</code>)
+    Regex from the command-line with
+
+    <code class="pink">grep</code>
+    (or <code class="pink">ack</code> or <code class="pink">ag</code>)
   </h3>
 
 
@@ -354,30 +363,71 @@ Gizmodo:
 </ul>
 </section>
 <section class="slide">
+
+<div class="meta">
+  <h3 class="title">Looking for <code>love</code>
+    at the command-line with <code>ack</code>
+  </h3>
+  <ul class="pseudo">
+    <li>Type in the name of the program <code>ack</code></li>
+    <li>Type in the pattern <code>'love'</code></li>
+    <li>Type in the filename <code>romeoandjuliet</code></li>
+  </ul>
+  <pre class="exp">ack 'love' romeoandjuliet</pre>
+</div>
+
+
+
 <div id="player-rjlove"></div>
 <script>
   asciinema_player.core.CreatePlayer(
           'player-rjlove', 'ascii-jsons/rj-love.json',
           {
-             autoPlay: true, speed: 2, fontSize: '19px',
+             autoPlay: false, speed: 2, fontSize: '19px',
              theme: 'monokai'
            }
         );
 </script>
 </section>
 <section class="slide">
+
+<div class="meta">
+  <h3 class="title">Looking for long words in all of Romeo and Juliet
+  </h3>
+  <ul class="pseudo">
+    <li>Any sequence of word-characters, 10-or-more in a row</li>
+  </ul>
+  <pre class="exp">ack '\w{10,}' romeoandjuliet</pre>
+</div>
+
+
+
 <div id="player-rjlongwords"></div>
 <script>
   asciinema_player.core.CreatePlayer(
           'player-rjlongwords', 'ascii-jsons/rj-longwords.json',
           {
-             autoPlay: true, speed: 8, fontSize: '19px',
+             autoPlay: false, speed: 4, fontSize: '19px',
              theme: 'monokai'
            }
         );
 </script>
 </section>
 <section class="slide">
+
+<div class="meta">
+  <h3 class="title">Just show the match (i.e. the long word)
+  </h3>
+  <div class="description">
+  Sometimes we only want to see what we've matched, not the entire line that the match is in.
+  </div>
+  <ul class="pseudo">
+    <li>Use the <code>-o</code> flag to specify that we don't want to print the entire line.</li>
+  </ul>
+  <pre class="exp">ack -o '\w{10,}' romeoandjuliet</pre>
+</div>
+
+
 <div id="player-rjlongwords-isolated"></div>
 <script>
   asciinema_player.core.CreatePlayer(
@@ -390,6 +440,20 @@ Gizmodo:
 </script>
 </section>
 <section class="slide">
+
+<div class="meta">
+  <h3 class="title">Sort the list of long words
+  </h3>
+  <div class="description">
+Rearrange each printed line in alphabetical order.
+  </div>
+  <ul class="pseudo">
+    <li>Use good old Unix pipes, <code>|</code>, to send a line of text from one program to the other </li>
+  </ul>
+  <pre class="exp shell">ack -o '\w{10,}' romeoandjuliet <span class="pink b"> | sort</span></pre>
+</div>
+
+
 <div id="player-rj-longwords-isolated-count"></div>
 <script>
 
@@ -404,7 +468,22 @@ Gizmodo:
 </script>
 </section>
 <section class="slide">
-<h4>sort | count uniques</h4>
+
+<div class="meta">
+  <h3 class="title">How many unique words are there, and how many of each?
+  </h3>
+  <div class="description">
+Only show each unique line once, along with how many times it appeared in the output.
+  </div>
+  <ul class="pseudo">
+    <li>Use another pipe, <code>|</code>, to connect another program </li>
+    <li>Why do we have to <em>sort</em> before we count uniques? Because that's how helplessly dumb your computer (and every computer) is.</li>
+
+  </ul>
+  <pre class="exp shell">ack -o '\w{10,}' romeoandjuliet | sort <span class="pink b"> | uniq -c</span></pre>
+</div>
+
+
 
 
 <pre>
@@ -433,7 +512,23 @@ Gizmodo:
 </aside>
 </section>
 <section class="slide">
-<h4>sort | count uniques | sort (in numerical order)</h4>
+
+<div class="meta">
+  <h3 class="title">Make a word cloud (without the cloud part)
+  </h3>
+  <div class="description">
+Resort the output in numerical order (i.e. frequency of unique word)
+</div>
+  <ul class="pseudo">
+    <li>Use another pipe, <code>|</code>, to connect another call to <code>sort</code> </li>
+    <li>Use <code>sort</code>'s <code>-n</code> flag so that it sorts numerically and not alphabetically.
+    </li>
+  </ul>
+  <pre class="exp shell">ack -o '\w{10,}' romeoandjuliet |
+      sort | uniq -c <span class="pink b"> | sort -n</span></pre>
+</div>
+
+
 
 <pre>
    3 confession
@@ -461,9 +556,27 @@ Gizmodo:
 </aside>
 </section>
 <section class="slide">
-<img src="images/shakespeare-tree.png" alt="shakespeare-tree.png">
+<div class="meta">
+  <h3 class="title">
+  Search all the files in all the folders
+  </h3>
+</div>
+
+<img style="max-height: 100%" src="images/shakespeare-tree.png" alt="shakespeare-tree.png">
 </section>
 <section class="slide">
+<div class="meta">
+  <h3 class="title">
+  Search all the files in all the folders
+  </h3>
+
+<pre class="exp shell">
+ack -ho '\w{10,}' <span class="pink b">shakespeare/</span> |
+    sort | uniq -c | sort -n
+</pre>
+</div>
+
+
 <div id="player-allshakespeare-longwords"></div>
 <script>
   asciinema_player.core.CreatePlayer(
@@ -472,13 +585,24 @@ Gizmodo:
           {
              autoPlay: false, speed: 2, fontSize: '19px',
              theme: 'monokai',
-             poster: "data:text/plain,$ ack -ho '\w{15,}' | sort | uniq -c | sort -n"
+             poster: "data:text/plain,$ ack -ho '\w{10,}' | sort | uniq -c | sort -n"
            }
         );
 </script>
 </section>
 <section class="slide">
-<h4>Frequency count of "I [something]"</h4>
+<div class="meta">
+  <h3 class="title">
+Frequency count of "I [something]"
+  </h3>
+
+<pre class="exp shell">
+ack -ho '<span class="b pink">I \w+</span>' shakespeare/ |
+  sort | uniq -c | sort -n
+</pre>
+</div>
+
+
 
 <pre>
  325 I was
@@ -506,7 +630,19 @@ Gizmodo:
 
 </section>
 <section class="slide">
+
+
+<div class="meta">
 <h4>Frequency count of "I am [something]"</h4>
+
+<pre class="exp shell">
+ack -ho <span class="pink b">'I am \w+'</span> shakespeare/ |
+  sort | uniq -c | sort -n
+</pre>
+</div>
+
+
+
 
 <pre>
   18 I am for
@@ -536,10 +672,17 @@ Gizmodo:
 
 </section>
 <section class="slide">
-
-<h4>Frequency count of
+<div class="meta">
+<h4 class="title">Frequency count of
 <u>just the third word</u> in
-"I am <em>[something]</em>"</h4>
+"I am <em class="pinnk">[something]</em>"</h4>
+
+
+<pre class="exp shell">ack -h 'I am <span class="pink b">(\w+)</span>' <span class="pink b">--output '$1'</span> shakespeare/ |
+    sort | uniq -c | sort -n
+</pre>
+
+</div>
 
 <pre>
   22 too
@@ -570,8 +713,18 @@ ack -h 'I am (\w+)' shakespeare/ --output '$1' | sort | uniq -c | sort -n
 </section>
 <section class="slide">
 
-<h4>Frequency count of the <u>fourth word</u> in:<br>
-"I am [<em>a</em> or <em>an</em> or <em>the</em>] <em>[something]</em>"</h4>
+
+<div class="meta">
+<h4 class="title">Frequency count of the <u>fourth word</u> in:<br>
+"I am <span class="pink">[<em>a</em> or <em>an</em> or <em>the</em>]</span> <em>[something]</em>"</h4>
+
+
+
+<pre class="exp shell">ack -h 'I am <span class="pink b">(?:a|an|the)</span> (\w+)' \
+          --output '$1' shakespeare/ |
+      sort | uniq -c | sort -n
+</pre>
+</div>
 
 <pre>
    3 son
@@ -601,13 +754,15 @@ ack -h 'I am (a|an|the) (\w+)' shakespeare/ --output '$2' | sort | uniq -c | sor
 
 </section>
 <section class="slide">
-<h3>Use the API to move from the Web...</h3>
-
+<h2>Use the Twitter API to move data...</h2>
+</section>
+<section class="slide">
+<h3>...from twitter.com...</h3>
 
 <img src="images/trump-tweets.jpg" alt="trump-tweets.jpg">
 </section>
 <section class="slide">
-<h3>...to text</h3>
+<h3>...to plain text</h3>
 
 
 <img src="images/trump-tweets-as-csv.png" alt="trump-tweets-as-csv.png">
@@ -615,7 +770,7 @@ ack -h 'I am (a|an|the) (\w+)' shakespeare/ --output '$2' | sort | uniq -c | sor
 
 </section>
 <section class="slide">
-<h3>...but not to a spreadsheet (yet)</h3>
+<h3>...but <em>not</em> to a spreadsheet (yet)</h3>
 
 <img src="images/trump-tweets-as-spreadsheet.png" alt="trump-tweets-as-spreadsheet.png">
 </section>
@@ -623,11 +778,11 @@ ack -h 'I am (a|an|the) (\w+)' shakespeare/ --output '$2' | sort | uniq -c | sor
 
 <div class="meta">
   <h3 class="title">Trump's hashtags?</h3>
-  <pre class="exp">#\w+</pre>
   <ul class="pseudo">
     <li>The <code>#</code> character</li>
     <li>Followed by one-or-more word characters</li>
   </ul>
+  <pre class="exp">#\w+</pre>
 </div>
 
 <pre class="f9 b9">
@@ -720,9 +875,6 @@ ack -h 'I am (a|an|the) (\w+)' shakespeare/ --output '$2' | sort | uniq -c | sor
 </div>
 
 <pre class="f9 b9">
-  20 @GOP
-  20 @IvankaTrump
-  20 @JoeNBC
   20 @nytimes
   20 @politico
   21 @TheBrodyFile
@@ -821,13 +973,11 @@ ack -o '\w+ \w+ @nyt\w+ \w+'  realdonaldtrump.csv |
   </h2>
 
 
-  <p>
+  <div class="subtitle">
     Selectively print columns from a delimited text file.
-  </p>
+  </div>
 
-<pre class="exp shell big" data-trim><code>
-csvcut -c 'column_name_1,column_name_9' somefile
-</code></pre>
+<pre class="exp shell big">csvcut -c 'column_name_1,column_name_9' somefile</pre>
 </section>
 <section class="slide">
 
@@ -901,7 +1051,7 @@ csvcut -c 'Posted at' realdonaldtrump.csv |
 </pre>
 </div>
 
-<pre class="f9 b9">
+<pre class="f9 b9 big">
  212 2015-07
  441 2015-08
  441 2015-09
@@ -917,7 +1067,7 @@ csvcut -c 'Posted at' realdonaldtrump.csv |
 <section class="slide">
 
 <div class="meta">
-  <h3 class="title">Print the frequency of tweets per month</h3>
+  <h3 class="title">Print the frequency of tweets per month as a CSV</h3>
   <pre class="exp">
 csvcut -c 'Posted at' realdonaldtrump.csv |
   ack -o '\d{4}-\d{2}' |
@@ -926,7 +1076,7 @@ csvcut -c 'Posted at' realdonaldtrump.csv |
 </pre>
 </div>
 
-<pre class="f9 b9">
+<pre class="f9 b9 big">
 2015-07,212
 2015-08,441
 2015-09,441
@@ -941,7 +1091,7 @@ csvcut -c 'Posted at' realdonaldtrump.csv |
 <section class="slide">
 
 <div class="meta">
-  <h3 class="title">Import realdonaldtrump's tweet frequency in Excel</h3>
+  <h3 class="title">Import tweet-frequency-as-CSV into Excel</h3>
 </div>
 
 <img src="images/trump-tweets-years.jpg" alt="trump-tweets-years.jpg">
@@ -1137,11 +1287,18 @@ ack 'LAWYER|ATTORNEY' indiv-contributions.txt |
   <h3 class="title">
     Do you know how to spell "Masha...cket Pequot"?
   </h3>
+
+
+<ul class="pseudo">
+  <li>Search for <code>MASH</code>
+  <li>followed by one-or-more uppercase letters</li>
+  <li>followed by <code>CKET</code></li>
+</ul>
+
+
   <pre class="exp shell">
 ack 'MASH[A-Z]+CKET' indiv-contributions.txt</pre>
-<ul class="pseudo">
-  <li>Search for <code>MASH</code>, followed by <code>one-or-more uppercase letters, followed by <code>CKET</code></code></li>
-</ul>
+
 </div>
 
 
@@ -1156,15 +1313,18 @@ C00167320|N|M8|P|201508209000867724|11|ORG|<span class="b5"><span class="bold">M
 <section class="slide">
 <div class="meta">
   <h3 class="title">
-   Does the Mashantucket Pequot know how to spell Mashantucket?
+   Does the <em>Mashantucket Pequot</em> know how to spell "Mashantucket"?
   </h3>
+<ul class="pseudo">
+  <li>Search for <code>FU</code></li>
+  <li>followed by any word character</li>
+  <li>followed by a <code>K</code> character</li>
+</ul>
   <pre class="exp shell">
 ack -o 'MASH[A-Z]+CKET' indiv-contributions.txt |
   sort | uniq -c
 </pre>
-<ul class="pseudo">
-  <li>Search for <code>MASH</code>, followed by <code>one-or-more uppercase letters, followed by <code>CKET</code></code></li>
-</ul>
+
 </div>
 
 
@@ -1172,6 +1332,156 @@ ack -o 'MASH[A-Z]+CKET' indiv-contributions.txt |
    2 MASHANFUCKET
   56 MASHANTUCKET
 </pre>
+</section>
+<section class="slide">
+<div class="meta">
+  <h3 class="title">
+   Just how many <em>F*UCK</em>s have been given to 2015-2016 campaigns?
+  </h3>
+<ul class="pseudo">
+  <li>Search for <code>FU</code></li>
+  <li>followed by any word character</li>
+  <li>followed by a <code>K</code> character</li>
+</ul>
+
+  <pre class="exp shell">
+ack -o 'FU\wK' indiv-contributions.txt | sort | uniq -c
+</pre>
+
+</div>
+
+
+
+<pre>
+   5 FUCK
+  52 FULK
+ 207 FUNK
+   4 FURK
+  10 FUSK
+</pre>
+</section>
+<section class="slide">
+<div class="meta">
+  <h3 class="title">
+   And who exactly are these <em>F*CK</em>s?
+  </h3>
+<div class="description">
+  Let's see some context around the word (but not the entire line)
+</div>
+<ul class="pseudo">
+  <li>Any 25 characters</li>
+  <li>Then, the sequence <code>FUCK</code></li>
+  <li>Then, the next 25 characters</li>
+</ul>
+
+  <pre class="exp shell">
+ack -o '.{25}FUCK.{25}' indiv-contributions.txt
+</pre>
+
+</div>
+
+
+<pre>
+2010200020023|21Y||MASHANFUCKET PEQUOT TRIBAL NATION|M
+2010200020023|21Y||MASHANFUCKET PEQUOT TRIBAL NATION|M
+420|SELF EMPLOYED MOTHER FUCKER|ELECTRICIAN|12102015|5
+481769315|HEARST|BAD-ASS FUCKING PROFESSIONAL CHILD|12
+180|SELF EMPLOYED MOTHER FUCKER|ELECTRICIAN|12102015|5
+</pre>
+
+
+<aside class="notes">
+  It's easy.
+</aside>
+</section>
+<section class="slide">
+<h2>Big data joining</h2>
+</section>
+<section class="slide">
+
+<div class="meta">
+  <h3 class="title">Who donates to Trump's campaign committees?</h3>
+  <pre class="exp shell">ack 'TRUMP' committees.txt
+</pre>
+</div>
+
+</section>
+<section class="slide">
+
+<h3>But what <em>are</em> Trump's (real) committees?</h3>
+
+<pre class="big truncate">
+C00420679|EDDIE 4-<span class="b5"><span class="bold">TRUMP</span></span> HAMILTON- US SENATE 2016|EDWARD HAMILTON|107 KAVA KAVA STREET||HENDERSON|NV|89015|P|S|REP|A|||
+C00580100|DONALD J. <span class="b5"><span class="bold">TRUMP</span></span> FOR PRESIDENT, INC.|JOST, TIMOTHY|725 FIFTH AVENUE||NEW YORK|NY|10022|P|P|REP|M|||P80001571
+C00583716|DONALD <span class="b5"><span class="bold">TRUMP</span></span> ORGANIZATION|MR DONALD J <span class="b5"><span class="bold">TRUMP</span></span>|725 FIFTH AVENUE||NEW YORK|NY|10022|P|P|REP|Q|||
+C00585836|THE COMMITTEE TO STOP <span class="b5"><span class="bold">TRUMP</span></span>|BUTLER, ROBERT D MR.|1000 HERITAGE CENTER CIRCLE||ROUND 8|TX|78664|U|U||Q|||
+C00586826|PATRIOTS FOR <span class="b5"><span class="bold">TRUMP</span></span>|SCOTT B MACKENZIE|2776 S ARLINGTON MILL DR #806||ARLINGTON|VA|22206|U|O||T|||
+C00587360|<span class="b5"><span class="bold">TRUMP</span></span>ET! PAC|LUCAS CONNOR|PO BOX 751826||FAIRBANKS|AK|997751826|U|O||Q|||
+C00588319|LET'S <span class="b5"><span class="bold">TRUMP</span></span> POLITICS|THOMAS COOPER|911 S 8TH AVE||LA GRANGE|IL|60525|U|O||Q|||
+C00590398|TEXANS FOR <span class="b5"><span class="bold">TRUMP</span></span>|COSSUM, ZAC|1412-B STONEHOLLOW DR.||KINGWOOD|TX|77339|U|U||Q|||
+C00591008|VETERANS FOR <span class="b5"><span class="bold">TRUMP</span></span> SUPER PAC|FERNANDEZ, BERNADINE LANIHOU MS|6225 ILANOS LN #B||LAS VEGAS|NV|89108|U|U||T|||
+C00591115|AMERICAS <span class="b5"><span class="bold">TRUMP</span></span> CARD SUPER PAC|WOISSEL, BRITTANY|12808 LOWER RIVER BLVD||ORLANDO|FL|32828|U|O||T|||
+C00594564|<span class="b5"><span class="bold">TRUMP</span></span> USA SUPER PAC|STEPHEN B MCKANNA|PO BOX 998||MONROE|WA|98272|U|O||Q|||
+C00605691|INDIAN-AMERICANS FOR <span class="b5"><span class="bold">TRUMP</span></span> 2016|MAKKAR, DEVENDRA (DAVE)|11 PINEWOOD LANE||WARREN|NJ|07059|U|U||Q||NONE|
+C00609073|VETERANS FOR <span class="b5"><span class="bold">TRUMP</span></span>|SHIHADEH, OMAR|3481 LAKESIDE DRIVE NE|SUITE 2803|ATLANTA|GA|30326|U|O||Q|||
+C00610105|<span class="b5"><span class="bold">TRUMP</span></span> OR CANCER PAC|PINTO, JOHN|31 IRVING ST #2||BOSTON|MA|02114|U|O||Q|||
+C00610907|NEVER<span class="b5"><span class="bold">TRUMP</span></span> PAC|SPURLOCK, CAROLYN NELSON|P. O. BOX 320834||ALEXANDRIA|VA|22320|U|O||Q||NONE|
+C00611020|<span class="b5"><span class="bold">TRUMP</span></span> HAS TINY HANDS PAC|KRAEMER, HENRY|1621 NE KILLINGSWORTH ST.|APT. 7|PORTLAND|OR|97211|U|U||Q||NONE|
+C00611160|NEVER<span class="b5"><span class="bold">TRUMP</span></span>.ORG|MARSTON, CHRIS|PO BOX 26141||ALEXANDRIA|VA|22313|U|O||Q||NONE|
+C90015728|<span class="b5"><span class="bold">TRUMP</span></span>AC||107 S WEST ST|STE 555|ALEXANDRIA|VA|22314|U|I||Q|||
+</pre>
+</section>
+<section class="slide">
+<div class="meta">
+  <h3 class="title">
+   Get a list of Trump's <em>possible</em> committee IDs
+  </h3>
+  <div class="description">
+    We want to find which of Trump's <em>possible</em> committees have actually received campaign contributions.
+  </div>
+<ul class="pseudo">
+<li>In the committees file...</li>
+  <li>Match all lines that have <code>TRUMP</code> somewhere</li>
+  <li>Pipe them into another ack to match the first one-or-more word characters starting from the beginning of each line.</li>
+  <li>(i.e. the committee id)</li>
+  <li>Output just the matches into a new text file, <code class="pink">trumpc.txt</code></li>
+</ul>
+
+<pre class="exp shell">
+ack 'TRUMP' committees.txt |
+    ack -o <span class="pink">'^\w+' > trumpc.txt</span>
+</pre>
+
+
+
+
+</div>
+
+
+<pre>
+C00420679
+C00580100
+C00583716
+C00585836
+C00586826
+C00587360
+C00588319
+C00590398
+C00591008
+C00591115
+C00594564
+C00605691
+C00609073
+C00610105
+C00610907
+C00611020
+C00611160
+C90015728
+
+
+</pre>
+</section>
+<section class="slide">
 </section>
 <section class="slide">
 </section>

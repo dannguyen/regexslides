@@ -1,6 +1,6 @@
 
 <div class="meta">
-  <h3 class="title">Print the frequency of tweets per month</h3>
+  <h3 class="title">Print the frequency of tweets per month as a CSV</h3>
   <pre class="exp">
 csvcut -c 'Posted at' realdonaldtrump.csv |
   ack -o '\d{4}-\d{2}' |
@@ -9,7 +9,7 @@ csvcut -c 'Posted at' realdonaldtrump.csv |
 </pre>
 </div>
 
-<pre class="f9 b9">
+<pre class="f9 b9 big">
 2015-07,212
 2015-08,441
 2015-09,441

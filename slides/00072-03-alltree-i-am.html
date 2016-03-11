@@ -1,4 +1,15 @@
-<h4>Frequency count of "I [something]"</h4>
+<div class="meta">
+  <h3 class="title">
+Frequency count of "I [something]"
+  </h3>
+
+<pre class="exp shell">
+ack -ho '<span class="b pink">I \w+</span>' shakespeare/ |
+  sort | uniq -c | sort -n
+</pre>
+</div>
+
+
 
 <pre>
  325 I was

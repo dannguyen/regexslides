@@ -1,4 +1,20 @@
-<h4>sort | count uniques | sort (in numerical order)</h4>
+
+<div class="meta">
+  <h3 class="title">Make a word cloud (without the cloud part)
+  </h3>
+  <div class="description">
+Resort the output in numerical order (i.e. frequency of unique word)
+</div>
+  <ul class="pseudo">
+    <li>Use another pipe, <code>|</code>, to connect another call to <code>sort</code> </li>
+    <li>Use <code>sort</code>'s <code>-n</code> flag so that it sorts numerically and not alphabetically.
+    </li>
+  </ul>
+  <pre class="exp shell">ack -o '\w{10,}' romeoandjuliet |
+      sort | uniq -c <span class="pink b"> | sort -n</span></pre>
+</div>
+
+
 
 <pre>
    3 confession
