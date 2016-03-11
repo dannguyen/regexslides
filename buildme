@@ -1,0 +1,10 @@
+#!/bin/bash
+cat template/head.html > index.html
+ls slides/*.html | while read -r fn; do
+  echo $fn
+  echo "<section class=\"slide\">" >> index.html
+    cat "$fn" >> index.html
+  echo "</section>" >> index.html
+done
+
+cat template/foot.html >> index.html

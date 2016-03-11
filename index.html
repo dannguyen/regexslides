@@ -1,0 +1,367 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="css/reveal.css">
+        <link rel="stylesheet" href="css/theme/blood.css">
+        <link rel="stylesheet" href="css/asciinema-player.css">
+        <link rel="stylesheet" href="css/ansi2html.css">
+        <link rel="stylesheet" href="css/styles.css">
+
+        <script src="js/asciinema-player.js"></script>
+
+
+    </head>
+    <body class="">
+
+
+      <div class="reveal">
+          <div class="slides">
+<section class="slide">
+<h2>Regular Regular Expression Exercises</h2>
+<h2>for Regular People</h2>
+</section>
+<section class="slide">
+<a href="http://regex.danwin.com/">http://regex.danwin.com/</a>
+</section>
+<section class="slide">
+
+
+<div id="player-beta01"></div>
+<script>
+  asciinema_player.core.CreatePlayer(
+          'player-beta01', 'ascii-jsons/0beta.json',
+          {
+             autoPlay: false, speed: 4, fontSize: '19px',
+             theme: 'solarized-dark'
+           }
+        );
+</script>
+</section>
+<section class="slide">
+<h2>What we can do with regular expressions</h2>
+
+<pre class="f9 b9">
+title,<span class="b5"><span class="bold">firstname</span></span>,<span class="b5"><span class="bold">middlename</span></span>,<span class="b5"><span class="bold">lastname</span></span>,<span class="b5"><span class="bold">name_suffix</span></span>,<span class="b5"><span class="bold">nickname</span></span>,party,state,<span class="b5"><span class="bold">district</span></span>,<span class="b5"><span class="bold">in_office</span></span>,gender,phone,fax,website,webform,<span class="b5"><span class="bold">congress_office</span></span>,<span class="b5"><span class="bold">bioguide_id</span></span>,<span class="b5"><span class="bold">votesmart_id</span></span>,fec_id,<span class="b5"><span class="bold">govtrack_id</span></span>,crp_id,<span class="b5"><span class="bold">twitter_id</span></span>,<span class="b5"><span class="bold">congresspedia_url</span></span>,<span class="b5"><span class="bold">youtube_url</span></span>,<span class="b5"><span class="bold">facebook_id</span></span>,<span class="b5"><span class="bold">official_rss</span></span>,<span class="b5"><span class="bold">senate_class</span></span>,<span class="b5"><span class="bold">birthdate</span></span>,<span class="b5"><span class="bold">oc_email
+</span></span>Rep,Robert,B.,<span class="b5"><span class="bold">Aderholt</span></span>,,,R,AL,4,1,M,202-225-4876,202-225-5587,https://<span class="b5"><span class="bold">aderholt</span></span>.house.gov,http://<span class="b5"><span class="bold">aderholt</span></span>.house.gov/email-me2/,235 Cannon House Office <span class="b5"><span class="bold">Building</span></span>,A000055,441,<span class="b5"><span class="bold">H6AL04098</span></span>,400004,<span class="b5"><span class="bold">N00003028</span></span>,<span class="b5"><span class="bold">Robert_Aderholt</span></span>,http://www.<span class="b5"><span class="bold">opencongress</span></span>.org/wiki/<span class="b5"><span class="bold">Robert_Aderholt</span></span>,http://youtube.com/<span class="b5"><span class="bold">RobertAderholt</span></span>,<span class="b5"><span class="bold">19787529402</span></span>,,,1965-07-22,Rep.<span class="b5"><span class="bold">Aderholt</span></span>@<span class="b5"><span class="bold">opencongress</span></span>.org
+Sen,Lamar,,<span class="b5"><span class="bold">Alexander</span></span>,,,R,TN,Senior Seat,1,M,202-224-4944,202-228-3398,http://www.<span class="b5"><span class="bold">alexander</span></span>.senate.gov,http://www.<span class="b5"><span class="bold">alexander</span></span>.senate.gov/public/index.cfm?p=Email,455 Dirksen Senate Office <span class="b5"><span class="bold">Building</span></span>,A000360,15691,<span class="b5"><span class="bold">S2TN00058</span></span>,300002,<span class="b5"><span class="bold">N00009888</span></span>,<span class="b5"><span class="bold">SenAlexander</span></span>,http://www.<span class="b5"><span class="bold">opencongress</span></span>.org/wiki/<span class="b5"><span class="bold">Lamar_Alexander</span></span>,http://youtube.com/<span class="b5"><span class="bold">lamaralexander</span></span>,<span class="b5"><span class="bold">89927603836</span></span>,,II,1940-07-03,Sen.<span class="b5"><span class="bold">Alexander</span></span>@<span class="b5"><span class="bold">opencongress</span></span>.org
+
+</pre>
+
+<ul>
+  <li>Find text</li>
+  <li>Find patterns of words</li>
+</ul>
+</section>
+<section class="slide">
+<h2>What we can't do with regular expressions</h2>
+
+<ul>
+  <li>Math</li>
+  <li>Databasing</li>
+  <li>Visualization</li>
+  <li>Logic</li>
+
+</ul>
+</section>
+<section class="slide">
+<div class="title">
+  <code>love</code>
+  everything with <code>love</code>
+</div>
+
+
+
+<pre class="f9 b9 big">
+Chorus  Now old desire doth in his death-bed lie,
+  And young affection gapes to be his heir;
+  That fair for which <span class="b5"><span class="bold">love</span></span> groan'd for and would die,
+  With tender Juliet match'd, is now not fair.
+  Now Romeo is be<span class="b5"><span class="bold">love</span></span>d and <span class="b5"><span class="bold">love</span></span>s again,
+  Alike betwitched by the charm of looks,
+  But to his foe supposed he must complain,
+  And she steal <span class="b5"><span class="bold">love</span></span>'s sweet bait from fearful hooks:
+  Being held a foe, he may not have access
+  To breathe such vows as <span class="b5"><span class="bold">love</span></span>rs use to swear;
+  And she as much in <span class="b5"><span class="bold">love</span></span>, her means much less
+  To meet her new-be<span class="b5"><span class="bold">love</span></span>d any where:
+  But passion lends them power, time means, to meet
+  Tempering extremities with extreme sweet.
+</pre>
+
+
+<!-- ack 'love' rj.txt  -->
+</section>
+<section class="slide">
+<div class="title">
+  <code>\blove</code>
+  words that begin with "love"
+</div>
+
+<pre class="f9 b9 big">
+Chorus  Now old desire doth in his death-bed lie,
+  And young affection gapes to be his heir;
+  That fair for which <span class="b5"><span class="bold">love</span></span> groan'd for and would die,
+  With tender Juliet match'd, is now not fair.
+  Now Romeo is beloved and <span class="b5"><span class="bold">love</span></span>s again,
+  Alike betwitched by the charm of looks,
+  But to his foe supposed he must complain,
+  And she steal <span class="b5"><span class="bold">love</span></span>'s sweet bait from fearful hooks:
+  Being held a foe, he may not have access
+  To breathe such vows as <span class="b5"><span class="bold">love</span></span>rs use to swear;
+  And she as much in <span class="b5"><span class="bold">love</span></span>, her means much less
+  To meet her new-beloved any where:
+  But passion lends them power, time means, to meet
+  Tempering extremities with extreme sweet.
+</pre>
+
+
+</section>
+<section class="slide">
+<div class="title">
+  <code>\blove\b</code>
+  love and only love
+</div>
+
+<pre class="f9 b9 big">
+Chorus  Now old desire doth in his death-bed lie,
+  And young affection gapes to be his heir;
+  That fair for which <span class="b5"><span class="bold">love</span></span> groan'd for and would die,
+  With tender Juliet match'd, is now not fair.
+  Now Romeo is beloved and loves again,
+  Alike betwitched by the charm of looks,
+  But to his foe supposed he must complain,
+  And she steal <span class="b5"><span class="bold">love</span></span>'s sweet bait from fearful hooks:
+  Being held a foe, he may not have access
+  To breathe such vows as lovers use to swear;
+  And she as much in <span class="b5"><span class="bold">love</span></span>, her means much less
+  To meet her new-beloved any where:
+  But passion lends them power, time means, to meet
+  Tempering extremities with extreme sweet.
+</pre>
+
+
+</section>
+<section class="slide">
+<div class="title">
+  <code>\bl\w+</code>
+  any word that begins with an `l`
+</div>
+
+<pre class="f9 b9 big">
+Chorus  Now old desire doth in his death-bed <span class="b5"><span class="bold">lie</span></span>,
+  And young affection gapes to be his heir;
+  That fair for which <span class="b5"><span class="bold">love</span></span> groan'd for and would die,
+  With tender Juliet match'd, is now not fair.
+  Now Romeo is beloved and <span class="b5"><span class="bold">loves</span></span> again,
+  Alike betwitched by the charm of <span class="b5"><span class="bold">looks</span></span>,
+  But to his foe supposed he must complain,
+  And she steal <span class="b5"><span class="bold">love</span></span>'s sweet bait from fearful hooks:
+  Being held a foe, he may not have access
+  To breathe such vows as <span class="b5"><span class="bold">lovers</span></span> use to swear;
+  And she as much in <span class="b5"><span class="bold">love</span></span>, her means much <span class="b5"><span class="bold">less</span></span>
+  To meet her new-beloved any where:
+  But passion <span class="b5"><span class="bold">lends</span></span> them power, time means, to meet
+  Tempering extremities with extreme sweet.
+</pre>
+
+
+<!-- ack 'ack '\bl\w+' rj.txt' rj.txt  -->
+</section>
+<section class="slide">
+<div class="title">
+  <code>\w+\.</code>
+  any word that is followed by a period.
+</div>
+
+
+<pre class="f9 b9 big">
+Chorus  Now old desire doth in his death-bed lie,
+  And young affection gapes to be his heir;
+  That fair for which love groan'd for and would die,
+  With tender Juliet match'd, is now not <span class="b5"><span class="bold">fair.</span></span>
+  Now Romeo is beloved and loves again,
+  Alike betwitched by the charm of looks,
+  But to his foe supposed he must complain,
+  And she steal love's sweet bait from fearful hooks:
+  Being held a foe, he may not have access
+  To breathe such vows as lovers use to swear;
+  And she as much in love, her means much less
+  To meet her new-beloved any where:
+  But passion lends them power, time means, to meet
+  Tempering extremities with extreme <span class="b5"><span class="bold">sweet.</span></span>
+</pre>
+
+
+<!-- ack 'love' rj.txt  -->
+</section>
+<section class="slide">
+<div class="title">
+  <code>\w{10,}</code>
+  every word that is at least ten characters long.
+</div>
+
+
+
+<pre class="f9 b9 big">
+Chorus  Now old desire doth in his death-bed lie,
+  And young affection gapes to be his heir;
+  That fair for which love groan'd for and would die,
+  With tender Juliet match'd, is now not fair.
+  Now Romeo is beloved and loves again,
+  Alike <span class="b5"><span class="bold">betwitched</span></span> by the charm of looks,
+  But to his foe supposed he must complain,
+  And she steal love's sweet bait from fearful hooks:
+  Being held a foe, he may not have access
+  To breathe such vows as lovers use to swear;
+  And she as much in love, her means much less
+  To meet her new-beloved any where:
+  But passion lends them power, time means, to meet
+  Tempering <span class="b5"><span class="bold">extremities</span></span> with extreme sweet.
+</pre>
+
+
+<!-- ack 'love' rj.txt  -->
+</section>
+<section class="slide">
+<div class="title">
+  <code>^[^Tt]+$</code>
+  every line without a single "T" or "t"
+</div>
+
+<pre class="f9 b9 big">
+Chorus  Now old desire doth in his death-bed lie,
+  And young affection gapes to be his heir;
+  That fair for which love groan'd for and would die,
+  With tender Juliet match'd, is now not fair.
+<span class="b5"><span class="bold">  Now Romeo is beloved and loves again,</span></span>
+  Alike betwitched by the charm of looks,
+  But to his foe supposed he must complain,
+  And she steal love's sweet bait from fearful hooks:
+  Being held a foe, he may not have access
+  To breathe such vows as lovers use to swear;
+<span class="b5"><span class="bold">  And she as much in love, her means much less</span></span>
+  To meet her new-beloved any where:
+  But passion lends them power, time means, to meet
+  Tempering extremities with extreme sweet.
+</pre>
+</section>
+<section class="slide">
+<pre class="f9 b9 big">
+
+
+</pre>
+
+
+<!-- ack 'love' rj.txt  -->
+</section>
+<section class="slide">
+<pre class="f9 b9 big">
+
+
+</pre>
+
+
+<!-- ack 'love' rj.txt  -->
+</section>
+<section class="slide">
+<h2>Data cleaning</h2>
+</section>
+<section class="slide">
+
+
+<img src="images/trump-giz-article.jpg" alt="">
+
+
+<aside class="notes">
+Gizmodo:
+<a href="http://gizmodo.com/wired-keeps-publishing-trump-stories-with-its-someone-w-1763771660">Wired Keeps Calling Trump 'Someone With Tiny Hands' Due to a Chrome Extension Error
+ </a>
+</aside>
+</section>
+<section class="slide">
+
+
+<img src="images/trump-wired-correx.png">
+
+
+<aside class="notes">
+<a href="http://www.wired.com/2016/03/chris-christie-marginal-media/">WIRED: Never Mind Trump. The Internet Wants to Watch What’s Behind Him</a>
+</aside>
+</section>
+<section class="slide">
+
+
+
+
+<div class="exp">
+  Find: <code class="exp">((Donald )?Trump)</code>
+</div>
+
+<p class="excerpt"><span class="f0 b3">DONALD TRUMP</span> MAY have bullied his way into the center of the American political arena, but during his Super Tuesday victory speech last week, the real action took place in the margins. That's where you could find Chris Christie apparently lost in reverie, his bewildering expressions instantly stealing the spotlight from <span class="f0 b3">Trump</span>'s choreographed Main Event. Twitter exploded with interpretations. Was he being held hostage? Realizing he had made a Gob Bluth-like "huge mistake"? Experiencing all the stages of grief simultaneously? Suddenly, <span class="f0 b3">Trump</span> was only the nation's second-most-compelling political psychodrama. Within minutes, Viners had re-cut the video, editing <span class="f0 b3">Trump</span> out of the frame entirely and zooming in on Christie's face. The supporting player had become the star.</p>
+
+
+<div class="exp">
+  Replace: <code class="exp">A Man With The Best Hands</code>
+</div>
+
+<p class="excerpt"><span class="b5"><span class="bold">A Man With The Best Hands</span></span> MAY have bullied his way into the center of the American political arena, but during his Super Tuesday victory speech last week, the real action took place in the margins. That's where you could find Chris Christie apparently lost in reverie, his bewildering expressions instantly stealing the spotlight from <span class="b5"><span class="bold">A Man With The Best Hands</span></span>'s choreographed Main Event. Twitter exploded with interpretations. Was he being held hostage? Realizing he had made a Gob Bluth-like "huge mistake"? Experiencing all the stages of grief simultaneously? Suddenly, <span class="b5"><span class="bold">A Man With The Best Hands</span></span> was only the nation's second-most-compelling political psychodrama. Within minutes, Viners had re-cut the video, editing <span class="b5"><span class="bold">A Man With The Best Hands</span></span> out of the frame entirely and zooming in on Christie's face. The supporting player had become the star.</p>
+
+
+</section>
+<section class="slide">
+<h1>
+  Regular expressions, line by line
+  from the command-line
+</h1>
+</section>
+<section class="slide">
+</section>
+<section class="slide">
+</section>
+<section class="slide">
+</section>
+<section class="slide">
+</section>
+<section class="slide">
+</section>
+<section class="slide">
+</section>
+<section class="slide">
+</section>
+<section class="slide">
+</section>
+<section class="slide">
+</section>
+<section class="slide">
+</section>
+<section class="slide">
+</section>
+<section class="slide">
+</section>
+<section class="slide">
+</section>
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+        </div>
+        <script src="js/reveal.js"></script>
+        <script>
+            Reveal.initialize(
+                { history: true,
+                  center: true,
+                  slideNumber: true
+                }
+            );
+        </script>
+
+
+    </body>
+</html>

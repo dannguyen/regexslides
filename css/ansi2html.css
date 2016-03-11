@@ -264,7 +264,7 @@
 .ef255 { color: #eeeeee; } .eb255 { background-color: #eeeeee; }
 
 .f9 { color: #EEE8D5; }
-.b9 { background-color: #073642; }
+.b9 { background-color: #222; }
 .f9 > .bold,.bold > .f9, body.f9 > pre > .bold {
   /* Bold is heavy black on white, or bright white
      depending on the default background */
@@ -286,6 +286,10 @@
 span { display: inline-block; }
 */
 
+
+pre.f9.b9{
+
+}
 pre.big{
   font-size: 25px;
 }

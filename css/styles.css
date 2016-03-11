@@ -1,0 +1,15 @@
+.exp{
+  text-align: left;
+}
+
+
+.exp code{
+  padding: 8px;
+  background: #444;
+}
+
+
+p.excerpt{
+  text-align: left;
+  font-size: 22px;
+}
