@@ -1,0 +1,26 @@
+<h4>Frequency count of "I [something]"</h4>
+
+<pre>
+ 325 I was
+ 326 I say
+ 344 I had
+ 348 I must
+ 394 I shall
+ 395 I pray
+ 403 I think
+ 631 I know
+ 656 I would
+ 833 I do
+1554 I will
+1611 I have
+1865 I am
+</pre>
+
+
+
+<aside class="notes">
+  <code>
+    ack -ho 'I \w+' shakespeare/ | sort | uniq -c | sort -n
+  </code>
+</aside>
+

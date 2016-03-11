@@ -31,7 +31,7 @@
           'player-beta01', 'ascii-jsons/0beta.json',
           {
              autoPlay: false, speed: 4, fontSize: '19px',
-             theme: 'solarized-dark'
+             theme: 'monokai'
            }
         );
 </script>
@@ -308,47 +308,298 @@ Gizmodo:
 
 </section>
 <section class="slide">
-<h1>
-  Regular expressions, line by line
-  from the command-line
-</h1>
+
+  <h3 class="title">
+    <code>grep</code>
+    (or <code>ack</code> or <code>ag</code>)
+  </h3>
+
+
+  <p>
+
+  <strong>globally search a regular expression and print
+  </strong>
+  </p>
+  <p>
+  (a command-line tool
+  for searching
+  plain-text files for lines that match
+  a regex pattern)</p>
+
 </section>
 <section class="slide">
+<div id="player-rjlove"></div>
+<script>
+  asciinema_player.core.CreatePlayer(
+          'player-rjlove', 'ascii-jsons/rj-love.json',
+          {
+             autoPlay: true, speed: 2, fontSize: '19px',
+             theme: 'monokai'
+           }
+        );
+</script>
 </section>
 <section class="slide">
+<div id="player-rjlongwords"></div>
+<script>
+  asciinema_player.core.CreatePlayer(
+          'player-rjlongwords', 'ascii-jsons/rj-longwords.json',
+          {
+             autoPlay: true, speed: 8, fontSize: '19px',
+             theme: 'monokai'
+           }
+        );
+</script>
 </section>
 <section class="slide">
+<div id="player-rjlongwords-isolated"></div>
+<script>
+  asciinema_player.core.CreatePlayer(
+          'player-rjlongwords-isolated', 'ascii-jsons/rj-longwords-isolated.json',
+          {
+             autoPlay: true, speed: 2, fontSize: '19px',
+             theme: 'monokai'
+           }
+        );
+</script>
 </section>
 <section class="slide">
+<div id="player-rj-longwords-isolated-count"></div>
+<script>
+
+  asciinema_player.core.CreatePlayer(
+          'player-rj-longwords-isolated-count', 'ascii-jsons/rj-longwords-isolated-count.json',
+          {
+             autoPlay: false, speed: 2, fontSize: '19px',
+             theme: 'monokai',
+             poster: "data:text/plain,$ ack -o '\w{10,}' romeoandjuliet | sort"
+           }
+        );
+</script>
 </section>
 <section class="slide">
-</section>
-<section class="slide">
-</section>
-<section class="slide">
-</section>
-<section class="slide">
-</section>
-<section class="slide">
-</section>
-<section class="slide">
-</section>
-<section class="slide">
-</section>
-<section class="slide">
-</section>
-<section class="slide">
-</section>
+<h4>sort | count uniques</h4>
+
+
+<pre>
+   1 triumphant
+   3 unaccustom
+   1 unattainted
+   2 underneath
+   1 unfurnished
+   1 unpleasing
+   1 unreasonable
+   1 unsatisfied
+   1 unsubstantial
+   1 unthankfulness
+   1 unworthiest
+   1 whispering
+   1 wretchedness
+   1 yesternight
+</pre>
 
 
 
+<aside class="notes">
+  <code>
+    ack -o '\w{10,}' romeoandjuliet | sort | uniq -c
+  </code>
+</aside>
+</section>
+<section class="slide">
+<h4>sort | count uniques | sort (in numerical order)</h4>
+
+<pre>
+   3 confession
+   3 counterfeit
+   3 inconstant
+   3 nightingale
+   3 oppression
+   3 philosophy
+   3 unaccustom
+   4 bridegroom
+   4 gentlewoman
+   5 honourable
+   5 lamentable
+   7 Apothecary
+   7 banishment
+   8 churchyard
+</pre>
 
 
 
+<aside class="notes">
+  <code>
+    ack -o '\w{10,}' romeoandjuliet | sort | uniq -c | sort -n
+  </code>
+</aside>
+</section>
+<section class="slide">
+<img src="images/shakespeare-tree.png" alt="shakespeare-tree.png">
+</section>
+<section class="slide">
+<div id="player-allshakespeare-longwords"></div>
+<script>
+  asciinema_player.core.CreatePlayer(
+          'player-allshakespeare-longwords',
+          'ascii-jsons/allshakespeare-longwords.json',
+          {
+             autoPlay: false, speed: 2, fontSize: '19px',
+             theme: 'monokai',
+             poster: "data:text/plain,$ ack -ho '\w{15,}' | sort | uniq -c | sort -n"
+           }
+        );
+</script>
+</section>
+<section class="slide">
+<h4>Frequency count of "I [something]"</h4>
+
+<pre>
+ 325 I was
+ 326 I say
+ 344 I had
+ 348 I must
+ 394 I shall
+ 395 I pray
+ 403 I think
+ 631 I know
+ 656 I would
+ 833 I do
+1554 I will
+1611 I have
+1865 I am
+</pre>
 
 
 
+<aside class="notes">
+  <code>
+    ack -ho 'I \w+' shakespeare/ | sort | uniq -c | sort -n
+  </code>
+</aside>
 
+</section>
+<section class="slide">
+<h4>Frequency count of "I am [something]"</h4>
+
+<pre>
+  18 I am for
+  22 I am too
+  23 I am as
+  24 I am bound
+  25 I am so
+  25 I am to
+  25 I am your
+  35 I am in
+  41 I am no
+  46 I am sorry
+  49 I am the
+  59 I am glad
+  70 I am sure
+ 136 I am a
+ 137 I am not
+</pre>
+
+
+
+<aside class="notes">
+  <code>
+    ack -ho 'I am \w+' shakespeare/ | sort | uniq -c | sort -n
+  </code>
+</aside>
+
+</section>
+<section class="slide">
+
+<h4>Frequency count of
+<u>just the third word</u> in
+"I am <em>[something]</em>"</h4>
+
+<pre>
+  22 too
+  23 as
+  24 bound
+  25 so
+  25 to
+  25 your
+  35 in
+  41 no
+  46 sorry
+  <strong>49 the</strong>
+  59 glad
+  70 sure
+ <strong>136 a</strong>
+ 137 not
+</pre>
+
+
+
+<aside class="notes">
+  <code>
+ack -h 'I am (\w+)' shakespeare/ --output '$1' | sort | uniq -c | sort -n
+
+  </code>
+</aside>
+
+</section>
+<section class="slide">
+
+<h4>Frequency count of the <u>fourth word</u> in:<br>
+"I am [<em>a</em> or <em>an</em> or <em>the</em>] <em>[something]</em>"</h4>
+
+<pre>
+   3 son
+   3 subject
+   4 honest
+   4 maid
+   4 villain
+   5 soldier
+   5 true
+   5 very
+   6 ass
+   6 woman
+   7 king
+   8 poor
+  10 man
+  19 gentleman
+</pre>
+
+
+
+<aside class="notes">
+  <code>
+ack -h 'I am (a|an|the) (\w+)' shakespeare/ --output '$2' | sort | uniq -c | sort -n
+
+  </code>
+</aside>
+
+</section>
+<section class="slide">
+</section>
+<section class="slide">
+</section>
+<section class="slide">
+</section>
+<section class="slide">
+</section>
+<section class="slide">
+</section>
+<section class="slide">
+</section>
+<section class="slide">
+</section>
+<section class="slide">
+</section>
+<section class="slide">
+</section>
+<section class="slide">
+</section>
+<section class="slide">
+</section>
+<section class="slide">
+</section>
+<section class="slide">
+</section>
 
             </div>
         </div>
@@ -360,6 +611,13 @@ Gizmodo:
                   slideNumber: true
                 }
             );
+
+            // Reveal.configure({
+            //   keyboard: {
+            //     13: 'next', // go to the next slide when the ENTER key is pressed
+            //     32: null // don't do anything when SPACE is pressed (i.e. disable a reveal.js default binding)
+            //   }
+            // });
         </script>
 
 

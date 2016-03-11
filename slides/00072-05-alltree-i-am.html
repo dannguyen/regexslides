@@ -1,0 +1,31 @@
+
+<h4>Frequency count of
+<u>just the third word</u> in
+"I am <em>[something]</em>"</h4>
+
+<pre>
+  22 too
+  23 as
+  24 bound
+  25 so
+  25 to
+  25 your
+  35 in
+  41 no
+  46 sorry
+  <strong>49 the</strong>
+  59 glad
+  70 sure
+ <strong>136 a</strong>
+ 137 not
+</pre>
+
+
+
+<aside class="notes">
+  <code>
+ack -h 'I am (\w+)' shakespeare/ --output '$1' | sort | uniq -c | sort -n
+
+  </code>
+</aside>
+

@@ -1,0 +1,159 @@
+{
+  "version": 1,
+  "width": 98,
+  "height": 20,
+  "duration": 45.222822,
+  "command": "/bin/bash",
+  "title": "",
+  "env": {
+    "TERM": "xterm-256color",
+    "SHELL": "/bin/bash"
+  },
+  "stdout": [
+    [
+      0.008335,
+      "\u001b[?1034h"
+    ],
+    [
+      0.000014,
+      "bash-3.2$ "
+    ],
+    [
+      0.917320,
+      "a"
+    ],
+    [
+      0.000039,
+      "ck"
+    ],
+    [
+      1.246486,
+      " "
+    ],
+    [
+      0.376359,
+      "-ho"
+    ],
+
+    [
+      0.000009,
+      " '\\w{"
+    ],
+    [
+      0.000038,
+      "1"
+    ],
+    [
+      0.000032,
+      "5,}'"
+    ],
+    [
+      1.511719,
+      " shakespeare/"
+    ],
+    [
+      1.000011,
+      " | "
+    ],
+    [
+      0.000019,
+      "s"
+    ],
+    [
+      0.000004,
+      "o"
+    ],
+    [
+      0.000017,
+      "r"
+    ],
+    [
+      0.000003,
+      "t"
+    ],
+    [
+      1.383651,
+      " "
+    ],
+    [
+      0.000011,
+      "| "
+    ],
+    [
+      0.000057,
+      "u"
+    ],
+    [
+      0.000007,
+      "ni"
+    ],
+    [
+      0.000003,
+      "q"
+    ],
+    [
+      0.000026,
+      " "
+    ],
+    [
+      0.000004,
+      "-"
+    ],
+    [
+      0.000014,
+      "c"
+    ],
+    [
+      1.423536,
+      " "
+    ],
+    [
+      0.000007,
+      "|"
+    ],
+    [
+      0.000013,
+      " "
+    ],
+    [
+      0.000015,
+      "s"
+    ],
+    [
+      0.000021,
+      "o"
+    ],
+    [
+      0.000010,
+      "r"
+    ],
+    [
+      0.000048,
+      "t"
+    ],
+    [
+      0.000046,
+      " -"
+    ],
+    [
+      0.000008,
+      "n"
+    ],
+    [
+      1.813818,
+      "\r\n"
+    ],
+    [
+      0.309457,
+      "   1 Anthropophaginian\r\n   1 Enfranchisement\r\n   1 Northamptonshire\r\n   1 Northumberlands\r\n   1 Notwithstanding\r\n   1 Particularities\r\n   1 Praeclarissimus\r\n   1 Unreconciliable\r\n   1 acknowledgement\r\n   1 circumscription\r\n   1 distemperatures\r\n   1 distinguishment\r\n   1 excommunication\r\n   1 honorificabilitudinitatibus\r\n   1 incomprehensible\r\n"
+    ],
+    [
+      0.000020,
+      "   1 indistinguishable\r\n   1 interchangement\r\n   1 interrogatories\r\n   1 misconstruction\r\n   1 misinterpreting\r\n   1 particularities\r\n   1 perpendicularly\r\n   1 transformations\r\n   1 uncompassionate\r\n   1 uncomprehensive\r\n   2 Flibbertigibbet\r\n   2 extraordinarily\r\n   2 prognostication\r\n   2 superstitiously\r\n   2 undistinguishable\r\n   3 impossibilities\r\n   4 interchangeably\r\n   5 enfranchisement\r\n  12 Gloucestershire\r\n  21 notwithstanding\r\n"
+    ],
+    [
+      0.000448,
+      "bash-3.2$ "
+    ]
+  ]
+}

@@ -1,0 +1,12 @@
+<div id="player-allshakespeare-longwords"></div>
+<script>
+  asciinema_player.core.CreatePlayer(
+          'player-allshakespeare-longwords',
+          'ascii-jsons/allshakespeare-longwords.json',
+          {
+             autoPlay: false, speed: 2, fontSize: '19px',
+             theme: 'monokai',
+             poster: "data:text/plain,$ ack -ho '\w{15,}' | sort | uniq -c | sort -n"
+           }
+        );
+</script>

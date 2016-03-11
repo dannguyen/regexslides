@@ -1,0 +1,30 @@
+
+<h4>Frequency count of the <u>fourth word</u> in:<br>
+"I am [<em>a</em> or <em>an</em> or <em>the</em>] <em>[something]</em>"</h4>
+
+<pre>
+   3 son
+   3 subject
+   4 honest
+   4 maid
+   4 villain
+   5 soldier
+   5 true
+   5 very
+   6 ass
+   6 woman
+   7 king
+   8 poor
+  10 man
+  19 gentleman
+</pre>
+
+
+
+<aside class="notes">
+  <code>
+ack -h 'I am (a|an|the) (\w+)' shakespeare/ --output '$2' | sort | uniq -c | sort -n
+
+  </code>
+</aside>
+

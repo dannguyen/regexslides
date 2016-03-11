@@ -3,13 +3,39 @@
 }
 
 
-.exp code{
+.reveal .exp code, .reveal code{
   padding: 8px;
   background: #444;
+}
+
+
+.reveal h1 code,
+.reveal h2 code,
+.reveal h3 code,
+.reveal h4 code,
+.reveal h5 code,
+.reveal h6 code{
+  font-family: Consolas, Menlo, monospace !important;
 }
 
 
 p.excerpt{
   text-align: left;
   font-size: 22px;
+}
+
+
+.left{
+  text-align:left;
+
+}
+
+
+.reveal .slides {
+  text-align: left;
+}
+
+
+.reveal .asciinema-theme-monokai .bg-13 {
+  background-color: magenta;
 }

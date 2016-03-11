@@ -1,0 +1,26 @@
+<h4>sort | count uniques | sort (in numerical order)</h4>
+
+<pre>
+   3 confession
+   3 counterfeit
+   3 inconstant
+   3 nightingale
+   3 oppression
+   3 philosophy
+   3 unaccustom
+   4 bridegroom
+   4 gentlewoman
+   5 honourable
+   5 lamentable
+   7 Apothecary
+   7 banishment
+   8 churchyard
+</pre>
+
+
+
+<aside class="notes">
+  <code>
+    ack -o '\w{10,}' romeoandjuliet | sort | uniq -c | sort -n
+  </code>
+</aside>

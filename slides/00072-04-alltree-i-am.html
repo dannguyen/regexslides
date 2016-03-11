@@ -1,0 +1,28 @@
+<h4>Frequency count of "I am [something]"</h4>
+
+<pre>
+  18 I am for
+  22 I am too
+  23 I am as
+  24 I am bound
+  25 I am so
+  25 I am to
+  25 I am your
+  35 I am in
+  41 I am no
+  46 I am sorry
+  49 I am the
+  59 I am glad
+  70 I am sure
+ 136 I am a
+ 137 I am not
+</pre>
+
+
+
+<aside class="notes">
+  <code>
+    ack -ho 'I am \w+' shakespeare/ | sort | uniq -c | sort -n
+  </code>
+</aside>
+

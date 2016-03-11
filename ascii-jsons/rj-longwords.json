@@ -1,0 +1,1182 @@
+{
+  "version": 1,
+  "width": 98,
+  "height": 15,
+  "duration": 23.328856,
+  "command": "/bin/bash",
+  "title": "",
+  "env": {
+    "TERM": "xterm-256color",
+    "SHELL": "/bin/bash"
+  },
+  "stdout": [
+    [
+      0.007771,
+      "\u001b[?1034h"
+    ],
+    [
+      0.001112,
+      "bash-3.2$ "
+    ],
+    [
+      0.357454,
+      "a"
+    ],
+    [
+      0.183665,
+      "c"
+    ],
+    [
+      0.128044,
+      "k"
+    ],
+    [
+      0.160119,
+      " "
+    ],
+    [
+      0.331882,
+      "'"
+    ],
+    [
+      0.255633,
+      "\\"
+    ],
+    [
+      0.151852,
+      "w"
+    ],
+    [
+      0.616237,
+      "{"
+    ],
+    [
+      0.199844,
+      "1"
+    ],
+    [
+      0.248207,
+      "0"
+    ],
+    [
+      0.155682,
+      ","
+    ],
+    [
+      0.168218,
+      "}"
+    ],
+    [
+      0.187803,
+      "'"
+    ],
+    [
+      0.327991,
+      " "
+    ],
+    [
+      0.383908,
+      "r"
+    ],
+    [
+      0.039951,
+      "o"
+    ],
+    [
+      0.097415,
+      "m"
+    ],
+    [
+      0.086716,
+      "eoandjuliet "
+    ],
+    [
+      1.351884,
+      "\r\n"
+    ],
+    [
+      0.070531,
+      "\t|  \u001b[105mFranciscans\u001b[0m.\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001121,
+      "\tAn \u001b[105mApothecary\u001b[0m. (\u001b[105mApothecary\u001b[0m:)\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001153,
+      "\tGuards, Watchmen, and \u001b[105mAttendants\u001b[0m.\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001145,
+      "\tTwo \u001b[105mhouseholds\u001b[0m, both alike in dignity,\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001142,
+      "\tWhole \u001b[105mmisadventured\u001b[0m piteous \u001b[105moverthrows\u001b[0m\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001130,
+      "\tAnd the \u001b[105mcontinuance\u001b[0m of their parents' rage,\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.000120,
+      "SAMPSON\tAy, the heads of the maids, or their \u001b[105mmaidenheads\u001b[0m;\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.000193,
+      "\tAnd \u001b[105mflourishes\u001b[0m his blade in spite of me.\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001151,
+      "\t[Enter PRINCE, with \u001b[105mAttendants\u001b[0m]\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001120,
+      "PRINCE\t\u001b[105mRebellious\u001b[0m subjects, enemies to peace,\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001146,
+      "\tThat quench the fire of your \u001b[105mpernicious\u001b[0m rage\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001188,
+      "\tWhile we were \u001b[105minterchanging\u001b[0m thrusts and blows,\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001149,
+      "\tWhere, \u001b[105munderneath\u001b[0m the grove of sycamore\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001133,
+      "\tI, measuring his \u001b[105maffections\u001b[0m by my own,\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001146,
+      "\tWith tears \u001b[105maugmenting\u001b[0m the fresh morning dew.\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001139,
+      "\tAnd makes himself an \u001b[105martificial\u001b[0m night:\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001125,
+      "\tBlack and \u001b[105mportentous\u001b[0m must this humour prove,\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001142,
+      "BENVOLIO\tHave you \u001b[105mimportuned\u001b[0m him by any means?\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001142,
+      "\tBut he, his own \u001b[105maffections\u001b[0m' \u001b[105mcounsellor\u001b[0m,\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.000120,
+      "BENVOLIO\tAt thy good heart's \u001b[105moppression\u001b[0m.\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001142,
+      "ROMEO\tWhy, such is love's \u001b[105mtransgression\u001b[0m.\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001136,
+      "\tA choking gall and a \u001b[105mpreserving\u001b[0m sweet.\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.000173,
+      "PARIS\tOf \u001b[105mhonourable\u001b[0m reckoning are you both;\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.000276,
+      "\tGo thither; and, with \u001b[105munattainted\u001b[0m eye,\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001149,
+      "\t\u001b[105mTransparent\u001b[0m heretics, be burnt for liars!\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001184,
+      "Nurse\tNow, by my \u001b[105mmaidenhead\u001b[0m, at twelve year old,\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.000109,
+      "\t'Tis since the \u001b[105mearthquake\u001b[0m now eleven years;\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.000142,
+      "\tHow stands your \u001b[105mdisposition\u001b[0m to be married?\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.000197,
+      "\tToo great \u001b[105moppression\u001b[0m for a tender thing.\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001128,
+      "\tToo rude, too \u001b[105mboisterous\u001b[0m, and it pricks like thorn.\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001145,
+      "\tWhat curious eye doth quote \u001b[105mdeformities\u001b[0m?\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.000107,
+      "\tThe cover of the wings of \u001b[105mgrasshoppers\u001b[0m,\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001149,
+      "\tTime out o' mind the fairies' \u001b[105mcoachmakers\u001b[0m.\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001159,
+      "\tBecause their breaths with \u001b[105msweetmeats\u001b[0m tainted are:\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001136,
+      "\tOf breaches, \u001b[105mambuscadoes\u001b[0m, Spanish blades,\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001146,
+      "\tWhich once untangled, much \u001b[105mmisfortune\u001b[0m bodes:\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001149,
+      "\tAnd more \u001b[105minconstant\u001b[0m than the wind, who wooes\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001130,
+      "\tSome \u001b[105mconsequence\u001b[0m yet hanging in the stars\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001150,
+      "\t[Musicians waiting. Enter \u001b[105mServingmen\u001b[0m with napkins]\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001153,
+      "\tthe porter let in Susan \u001b[105mGrindstone\u001b[0m and Nell.\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001150,
+      "\tAh ha, my \u001b[105mmistresses\u001b[0m! which of you all\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001135,
+      "\tA \u001b[105mwhispering\u001b[0m tale in a fair lady's ear,\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001176,
+      "ROMEO\t[To a \u001b[105mServingman\u001b[0m]  What lady is that, which doth\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.000100,
+      "\tHere in my house do him \u001b[105mdisparagement\u001b[0m:\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001185,
+      "ROMEO\t[To JULIET]  If I profane with my \u001b[105munworthiest\u001b[0m hand\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.000152,
+      "\t\u001b[105mProdigious\u001b[0m birth of love it is to me,\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001157,
+      "\tAlike \u001b[105mbetwitched\u001b[0m by the charm of looks,\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001141,
+      "\tTempering \u001b[105mextremities\u001b[0m with extreme sweet.\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.000107,
+      "\tThat were some spite: my \u001b[105minvocation\u001b[0m\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.000100,
+      "\tHer eye \u001b[105mdiscourses\u001b[0m; I will answer it.\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001142,
+      "\tThe \u001b[105mbrightness\u001b[0m of her cheek would shame those stars,\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001189,
+      "\tRetain that dear \u001b[105mperfection\u001b[0m which he owes\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001134,
+      "\t\u001b[105mHenceforth\u001b[0m I never will be Romeo.\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001162,
+      "\tAnd the place death, \u001b[105mconsidering\u001b[0m who thou art,\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001180,
+      "\tI would adventure for such \u001b[105mmerchandise\u001b[0m.\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001140,
+      "\tWhat I have spoke: but farewell \u001b[105mcompliment\u001b[0m!\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001140,
+      "\tIf thou dost love, pronounce it \u001b[105mfaithfully\u001b[0m:\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001156,
+      "\tWhich the dark night hath so \u001b[105mdiscovered\u001b[0m.\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001136,
+      "JULIET\tO, swear not by the moon, the \u001b[105minconstant\u001b[0m moon,\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001169,
+      "ROMEO\tO, wilt thou leave me so \u001b[105munsatisfied\u001b[0m?\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001127,
+      "JULIET\tWhat \u001b[105msatisfaction\u001b[0m canst thou have to-night?\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001170,
+      "\tToo \u001b[105mflattering\u001b[0m-sweet to be \u001b[105msubstantial\u001b[0m.\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001133,
+      "\tIf that thy bent of love be \u001b[105mhonourable\u001b[0m,\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001139,
+      "\tAnd follow thee my lord \u001b[105mthroughout\u001b[0m the world.\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001149,
+      "\tLove goes toward love, as \u001b[105mschoolboys\u001b[0m from\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001144,
+      "\tWith \u001b[105mrepetition\u001b[0m of my Romeo's name.\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001152,
+      "\t\u001b[105mRemembering\u001b[0m how I love thy company.\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001129,
+      "\t\u001b[105mForgetting\u001b[0m any other home but this.\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001150,
+      "\tYet I should kill thee with much \u001b[105mcherishing\u001b[0m.\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001153,
+      "\t\u001b[105mChequering\u001b[0m the eastern clouds with streaks of light,\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001174,
+      "\tVirtue itself turns vice, being \u001b[105mmisapplied\u001b[0m;\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001145,
+      "\tAnd where the worser is \u001b[105mpredominant\u001b[0m,\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001132,
+      "FRIAR LAURENCE\t\u001b[105mBenedicite\u001b[0m!\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001150,
+      "\tThou art up-roused by some \u001b[105mdistemperature\u001b[0m;\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001162,
+      "\tMy \u001b[105mintercession\u001b[0m likewise steads my foe.\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001130,
+      "\tRiddling \u001b[105mconfession\u001b[0m finds but riddling shrift.\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.000117,
+      "\tTo turn your \u001b[105mhouseholds\u001b[0m' rancour to pure love.\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001193,
+      "\tthe \u001b[105mcourageous\u001b[0m captain of \u001b[105mcompliments\u001b[0m. He fights as\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001127,
+      "\t\u001b[105mproportion\u001b[0m; rests me his minim rest, one, two, and\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001142,
+      "\t\u001b[105mfantasticoes\u001b[0m; these new tuners of accents! 'By Jesu,\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001130,
+      "\twhore!' Why, is not this a \u001b[105mlamentable\u001b[0m thing,\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001166,
+      "\tRomeo, bon jour! there's a French \u001b[105msalutation\u001b[0m\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001130,
+      "\tto your French slop. You gave us the \u001b[105mcounterfeit\u001b[0m\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001133,
+      "ROMEO\tGood morrow to you both. What \u001b[105mcounterfeit\u001b[0m did I give you?\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001139,
+      "\t\u001b[105mconstrains\u001b[0m a man to bow in the hams.\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001131,
+      "ROMEO\tA most courteous \u001b[105mexposition\u001b[0m.\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001144,
+      "\t\u001b[105msingleness\u001b[0m.\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001184,
+      "\tfor this \u001b[105mdrivelling\u001b[0m love is like a great natural,\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001167,
+      "MERCUTIO\tGod ye good den, fair \u001b[105mgentlewoman\u001b[0m.\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001136,
+      "ROMEO\tOne, \u001b[105mgentlewoman\u001b[0m, that God hath made for himself to\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001152,
+      "Nurse\tif you be he, sir, I desire some \u001b[105mconfidence\u001b[0m with\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.000127,
+      "\tkind of behavior, as they say: for the \u001b[105mgentlewoman\u001b[0m\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001137,
+      "\tto any \u001b[105mgentlewoman\u001b[0m, and very weak dealing.\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001137,
+      "\tI take it, is a \u001b[105mgentlemanlike\u001b[0m offer.\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.000110,
+      "\tletter:--and she hath the prettiest \u001b[105msententious\u001b[0m of\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001173,
+      "\tHad she \u001b[105maffections\u001b[0m and warm youthful blood,\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001187,
+      "\tSay either, and I'll stay the \u001b[105mcircumstance\u001b[0m:\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001196,
+      "\t\u001b[105mHenceforward\u001b[0m do your messages yourself.\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001181,
+      "\tIt cannot \u001b[105mcountervail\u001b[0m the exchange of joy\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001144,
+      "\tIs loathsome in his own \u001b[105mdeliciousness\u001b[0m\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001128,
+      "\tTherefore love \u001b[105mmoderately\u001b[0m; long love doth so;\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001137,
+      "\tWill ne'er wear out the \u001b[105meverlasting\u001b[0m flint:\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001177,
+      "\tTill holy church \u001b[105mincorporate\u001b[0m two in one.\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.000103,
+      "\tan egg for \u001b[105mquarrelling\u001b[0m: thou hast \u001b[105mquarrelled\u001b[0m with a\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001142,
+      "\twilt tutor me from \u001b[105mquarrelling\u001b[0m!\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001171,
+      "\tdiscords: here's my \u001b[105mfiddlestick\u001b[0m; here's that shall\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001135,
+      "\tAnd reason coldly of your \u001b[105mgrievances\u001b[0m,\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001157,
+      "\tDoth much excuse the \u001b[105mappertaining\u001b[0m rage\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001157,
+      "MERCUTIO\tO calm, \u001b[105mdishonourable\u001b[0m, vile \u001b[105msubmission\u001b[0m!\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.000106,
+      "\t\u001b[105marithmetic\u001b[0m! Why the devil came you between us? I\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001146,
+      "\tIn my behalf; my \u001b[105mreputation\u001b[0m stain'd\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001132,
+      "\tThy beauty hath made me \u001b[105meffeminate\u001b[0m\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001150,
+      "\tAway to heaven, \u001b[105mrespective\u001b[0m lenity,\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.000122,
+      "\tYour high \u001b[105mdispleasure\u001b[0m: all this uttered\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001158,
+      "\tAnd 'twixt them rushes; \u001b[105munderneath\u001b[0m whose arm\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001169,
+      "\t\u001b[105mImmediately\u001b[0m we do exile him hence:\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001132,
+      "\tI have an interest in your hate's \u001b[105mproceeding\u001b[0m,\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001165,
+      "\tAnd bring in cloudy night \u001b[105mimmediately\u001b[0m.\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001127,
+      "\tSpread thy close curtain, love-\u001b[105mperforming\u001b[0m night,\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001145,
+      "\tPlay'd for a pair of stainless \u001b[105mmaidenhoods\u001b[0m:\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.000116,
+      "\tThan the death-darting eye of \u001b[105mcockatrice\u001b[0m:\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.000103,
+      "\tA damned saint, an \u001b[105mhonourable\u001b[0m villain!\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001134,
+      "\tWas ever book \u001b[105mcontaining\u001b[0m such vile matter\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001136,
+      "\tAll forsworn, all naught, all \u001b[105mdissemblers\u001b[0m.\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.000101,
+      "\tOr, if sour woe delights in \u001b[105mfellowship\u001b[0m\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001134,
+      "\tWhich modern \u001b[105mlamentations\u001b[0m might have moved?\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001159,
+      "\tWhen theirs are dry, for Romeo's \u001b[105mbanishment\u001b[0m.\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001141,
+      "\tAnd death, not Romeo, take my \u001b[105mmaidenhead\u001b[0m!\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001151,
+      "\t\u001b[105mAffliction\u001b[0m is enamour'd of thy parts,\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001133,
+      "\tWhat sorrow craves \u001b[105macquaintance\u001b[0m at my hand,\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001144,
+      "\tNot body's death, but body's \u001b[105mbanishment\u001b[0m.\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001126,
+      "ROMEO\tHa, \u001b[105mbanishment\u001b[0m! be merciful, say 'death;'\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001132,
+      "\tMuch more than death: do not say '\u001b[105mbanishment\u001b[0m.'\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001146,
+      "\tIs death mis-term'd: calling death \u001b[105mbanishment\u001b[0m,\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001137,
+      "FRIAR LAURENCE\tO deadly sin! O rude \u001b[105munthankfulness\u001b[0m!\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001134,
+      "\tAnd turn'd that black word death to \u001b[105mbanishment\u001b[0m:\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001142,
+      "\tMore \u001b[105mhonourable\u001b[0m state, more courtship lives\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001174,
+      "ROMEO\tO, thou wilt speak again of \u001b[105mbanishment\u001b[0m.\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001128,
+      "\tAdversity's sweet milk, \u001b[105mphilosophy\u001b[0m,\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001131,
+      "ROMEO\tYet 'banished'? Hang up \u001b[105mphilosophy\u001b[0m!\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001126,
+      "\tUnless \u001b[105mphilosophy\u001b[0m can make a Juliet,\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001179,
+      "\tWhat \u001b[105msimpleness\u001b[0m is this! I come, I come!\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001150,
+      "\tPiteous \u001b[105mpredicament\u001b[0m! Even so lies she,\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001133,
+      "\t\u001b[105mBlubbering\u001b[0m and weeping, weeping and \u001b[105mblubbering\u001b[0m.\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001182,
+      "\tThe \u001b[105munreasonable\u001b[0m fury of a beast:\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001132,
+      "\tI thought thy \u001b[105mdisposition\u001b[0m better temper'd.\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001153,
+      "\t\u001b[105mDigressing\u001b[0m from the valour of a man;\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001165,
+      "\tBut, like a \u001b[105mmisbehaved\u001b[0m and sullen wench,\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001157,
+      "\tThan thou went'st forth in \u001b[105mlamentation\u001b[0m.\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.000149,
+      "\tIt may be thought we held him \u001b[105mcarelessly\u001b[0m,\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001163,
+      "\tIt was the \u001b[105mnightingale\u001b[0m, and not the lark,\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001130,
+      "\tNightly she sings on yon \u001b[105mpomegranate\u001b[0m-tree:\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001128,
+      "\tBelieve me, love, it was the \u001b[105mnightingale\u001b[0m.\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001129,
+      "\tNo \u001b[105mnightingale\u001b[0m: look, love, what envious streaks\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001178,
+      "\tStraining harsh discords and \u001b[105munpleasing\u001b[0m sharps.\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001175,
+      "\tI will omit no \u001b[105mopportunity\u001b[0m\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001135,
+      "\tFor sweet \u001b[105mdiscourses\u001b[0m in our time to come.\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001162,
+      "\tWhat \u001b[105munaccustom\u001b[0m'd cause procures her hither?\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001196,
+      "\tShall give him such an \u001b[105munaccustom\u001b[0m'd dram,\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.000129,
+      "\tThou \u001b[105mcounterfeit\u001b[0m'st a bark, a sea, a wind;\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001163,
+      "\tSo worthy a gentleman to be her \u001b[105mbridegroom\u001b[0m?\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001168,
+      "CAPULET\tHang thee, young baggage! \u001b[105mdisobedient\u001b[0m wretch!\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001181,
+      "\tStuff'd, as they say, with \u001b[105mhonourable\u001b[0m parts,\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001124,
+      "\t\u001b[105mProportion\u001b[0m'd as one's thought would wish a man;\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001153,
+      "\tFor, by my soul, I'll ne'er \u001b[105macknowledge\u001b[0m thee,\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001169,
+      "\tAlack, alack, that heaven should practise \u001b[105mstratagems\u001b[0m\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001175,
+      "JULIET\tWell, thou hast comforted me \u001b[105mmarvellous\u001b[0m much.\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001128,
+      "\tHaving \u001b[105mdispleased\u001b[0m my father, to Laurence' cell,\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001126,
+      "\tTo make \u001b[105mconfession\u001b[0m and to be absolved.\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001143,
+      "\tSo many thousand times? Go, \u001b[105mcounsellor\u001b[0m;\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001127,
+      "\tThou and my bosom \u001b[105mhenceforth\u001b[0m shall be twain.\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001153,
+      "PARIS\t\u001b[105mImmoderately\u001b[0m she weeps for Tybalt's death,\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001137,
+      "\tTo stop the \u001b[105minundation\u001b[0m of her tears;\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001155,
+      "PARIS\tCome you to make \u001b[105mconfession\u001b[0m to this father?\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.000112,
+      "\tDo thou but call my \u001b[105mresolution\u001b[0m wise,\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001137,
+      "\tOr my true heart with \u001b[105mtreacherous\u001b[0m revolt\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001130,
+      "\tTherefore, out of thy long-\u001b[105mexperienced\u001b[0m time,\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001133,
+      "\tShall play the umpire, \u001b[105marbitrating\u001b[0m that\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001126,
+      "\tWhich the \u001b[105mcommission\u001b[0m of thy years and art\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001159,
+      "\tFrom off the \u001b[105mbattlements\u001b[0m of yonder tower;\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001187,
+      "\tEach part, deprived of supple \u001b[105mgovernment\u001b[0m,\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001136,
+      "\tNow, when the \u001b[105mbridegroom\u001b[0m in the morning comes\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001152,
+      "\tIf no \u001b[105minconstant\u001b[0m toy, nor womanish fear,\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001140,
+      "FRIAR LAURENCE\tHold; get you gone, be strong and \u001b[105mprosperous\u001b[0m\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001140,
+      "\t\u001b[105mServingmen\u001b[0m]\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001153,
+      "\tWe shall be much \u001b[105munfurnished\u001b[0m for this time.\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001142,
+      "CAPULET\tHow now, my \u001b[105mheadstrong\u001b[0m! where have you been gadding?\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001133,
+      "\tOf \u001b[105mdisobedient\u001b[0m \u001b[105mopposition\u001b[0m\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001132,
+      "\t\u001b[105mHenceforward\u001b[0m I am ever ruled by you.\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.000121,
+      "JULIET\tNo, madam; we have cull'd such \u001b[105mnecessaries\u001b[0m\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001192,
+      "\tTo whose foul mouth no \u001b[105mhealthsome\u001b[0m air breathes in,\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001137,
+      "\tAs in a vault, an ancient \u001b[105mreceptacle\u001b[0m,\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001154,
+      "\tO, if I wake, shall I not be \u001b[105mdistraught\u001b[0m,\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001131,
+      "\tAnd madly play with my \u001b[105mforefather\u001b[0m's joints?\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001196,
+      "\t[Enter three or four \u001b[105mServingmen\u001b[0m, with spits, logs,\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001166,
+      "\tMake haste; the \u001b[105mbridegroom\u001b[0m he is come already:\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001145,
+      "\tWhat, not a word? you take your \u001b[105mpennyworths\u001b[0m now;\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001158,
+      "Nurse\tO \u001b[105mlamentable\u001b[0m day!\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001158,
+      "Nurse\tO \u001b[105mlamentable\u001b[0m day!\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001148,
+      "\tFlower as she was, \u001b[105mdeflowered\u001b[0m by him.\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001146,
+      "\tIn lasting labour of his \u001b[105mpilgrimage\u001b[0m!\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001135,
+      "\tMost \u001b[105mlamentable\u001b[0m day, most woful day,\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001136,
+      "\tMost \u001b[105mdetestable\u001b[0m death, by thee beguil'd,\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001129,
+      "\tBy cruel cruel thee quite \u001b[105moverthrown\u001b[0m!\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001132,
+      "CAPULET\tDespised, \u001b[105mdistressed\u001b[0m, hated, martyr'd, kill'd!\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001124,
+      "\t\u001b[105mUncomfortable\u001b[0m time, why camest thou now\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001139,
+      "\tIn these \u001b[105mconfusions\u001b[0m. Heaven and yourself\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001177,
+      "\tOur \u001b[105minstruments\u001b[0m to \u001b[105mmelancholy\u001b[0m bells,\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001157,
+      "Nurse\tHonest \u001b[105mgoodfellows\u001b[0m, ah, put up, put up;\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.000155,
+      "ROMEO\tIf I may trust the \u001b[105mflattering\u001b[0m truth of sleep,\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001136,
+      "\tAnd all this day an \u001b[105munaccustom\u001b[0m'd spirit\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001179,
+      "\tSome \u001b[105mmisadventure\u001b[0m.\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001148,
+      "\tI do remember an \u001b[105mapothecary\u001b[0m,--\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001127,
+      "\tAnd \u001b[105mhereabouts\u001b[0m he dwells,--which late I noted\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001128,
+      "\tIn tatter'd weeds, with \u001b[105moverwhelming\u001b[0m brows,\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001144,
+      "\tRemnants of \u001b[105mpackthread\u001b[0m and old cakes of roses,\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001146,
+      "\tWhat, ho! \u001b[105mapothecary\u001b[0m!\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001126,
+      "\t[Enter \u001b[105mApothecary\u001b[0m]\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001124,
+      "\u001b[105mApothecary\u001b[0m\tWho calls so loud?\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001141,
+      "\tAnd that the trunk may be \u001b[105mdischarged\u001b[0m of breath\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001131,
+      "\u001b[105mApothecary\u001b[0m\tSuch mortal drugs I have; but Mantua's law\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001132,
+      "ROMEO\tArt thou so bare and full of \u001b[105mwretchedness\u001b[0m,\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001129,
+      "\tNeed and \u001b[105moppression\u001b[0m starveth in thine eyes,\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001139,
+      "\u001b[105mApothecary\u001b[0m\tMy poverty, but not my will, consents.\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001126,
+      "\u001b[105mApothecary\u001b[0m\tPut this in any liquid thing you will,\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001158,
+      "FRIAR JOHN\tHoly \u001b[105mFranciscan\u001b[0m friar! brother, ho!\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001144,
+      "\t\u001b[105mSuspecting\u001b[0m that we both were in a house\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001132,
+      "\tWhere the \u001b[105minfectious\u001b[0m \u001b[105mpestilence\u001b[0m did reign,\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001146,
+      "FRIAR LAURENCE\tUnhappy fortune! by my \u001b[105mbrotherhood\u001b[0m,\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001130,
+      "\tOf dear import, and the \u001b[105mneglecting\u001b[0m it\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001157,
+      "SCENE III\tA \u001b[105mchurchyard\u001b[0m; in it a tomb belonging to the Capulets.\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001143,
+      "\tSo shall no foot upon the \u001b[105mchurchyard\u001b[0m tread,\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001139,
+      "\tHere in the \u001b[105mchurchyard\u001b[0m; yet I will adventure.\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001188,
+      "\tIn dear \u001b[105memployment\u001b[0m: therefore hence, be gone:\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001135,
+      "\tAnd strew this hungry \u001b[105mchurchyard\u001b[0m with thy limbs:\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001128,
+      "\tMore fierce and more \u001b[105minexorable\u001b[0m far\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001135,
+      "ROMEO\tSo shalt thou show me \u001b[105mfriendship\u001b[0m. Take thou that:\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001127,
+      "\tLive, and be \u001b[105mprosperous\u001b[0m: and farewell, good fellow.\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001134,
+      "ROMEO\tThou \u001b[105mdetestable\u001b[0m maw, thou womb of death,\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001183,
+      "PARIS\tI do defy thy \u001b[105mconjurations\u001b[0m,\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001161,
+      "\tOne writ with me in sour \u001b[105mmisfortune\u001b[0m's book!\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001126,
+      "\tI'll bury thee in a \u001b[105mtriumphant\u001b[0m grave;\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001173,
+      "\tThat \u001b[105munsubstantial\u001b[0m death is amorous,\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001141,
+      "\tWill I set up my \u001b[105meverlasting\u001b[0m rest,\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001129,
+      "\tAnd shake the yoke of \u001b[105minauspicious\u001b[0m stars\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001136,
+      "\tA dateless bargain to \u001b[105mengrossing\u001b[0m death!\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001134,
+      "\tO true \u001b[105mapothecary\u001b[0m!\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001132,
+      "\t[Enter, at the other end of the \u001b[105mchurchyard\u001b[0m, FRIAR\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001193,
+      "\tWhat mean these \u001b[105mmasterless\u001b[0m and gory swords\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001134,
+      "\tIs guilty of this \u001b[105mlamentable\u001b[0m chance!\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001129,
+      "JULIET\tO \u001b[105mcomfortable\u001b[0m friar! where is my lord?\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001140,
+      "\tA greater power than we can \u001b[105mcontradict\u001b[0m\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001133,
+      "\tAmong a \u001b[105msisterhood\u001b[0m of holy nuns:\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001150,
+      "\tTo make die with a \u001b[105mrestorative\u001b[0m.\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001155,
+      "First Watchman\tThe ground is bloody; search about the \u001b[105mchurchyard\u001b[0m:\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001146,
+      "\tWe cannot without \u001b[105mcircumstance\u001b[0m descry.\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001137,
+      "Second Watchman\tHere's Romeo's man; we found him in the \u001b[105mchurchyard\u001b[0m.\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001141,
+      "\tAs he was coming from this \u001b[105mchurchyard\u001b[0m side.\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001131,
+      "\t[Enter the PRINCE and \u001b[105mAttendants\u001b[0m]\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001127,
+      "PRINCE\tWhat \u001b[105mmisadventure\u001b[0m is so early up,\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001163,
+      "\tWith \u001b[105minstruments\u001b[0m upon them, fit to open\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001171,
+      "\tTill we can clear these \u001b[105mambiguities\u001b[0m,\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001173,
+      "\tBanish'd the new-made \u001b[105mbridegroom\u001b[0m from the city,\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001164,
+      "\tWas stay'd by accident, and \u001b[105myesternight\u001b[0m\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001134,
+      "\tTill I \u001b[105mconveniently\u001b[0m could send to Romeo:\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001148,
+      "\t\u001b[105mMiscarried\u001b[0m by my fault, let my old life\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001125,
+      "\tBe \u001b[105msacrificed\u001b[0m, some hour before his time,\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001145,
+      "\tAnd \u001b[105mthreatened\u001b[0m me with death, going in the vault,\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001157,
+      "\tOf a poor 'pothecary, and \u001b[105mtherewithal\u001b[0m\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001161,
+      "\tPoor \u001b[105msacrifices\u001b[0m of our enmity!\u001b[0m\u001b[K\r\n"
+    ],
+    [
+      0.001241,
+      "bash-3.2$ "
+    ]
+  ]
+}
