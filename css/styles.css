@@ -9,6 +9,9 @@
   font-family: Consolas, Menlo, monospace !important;
 }
 
+.reveal p{
+  font-size: 17px;
+}
 
 p.excerpt{
   text-align: left;
@@ -79,4 +82,11 @@ p.excerpt{
 
 .reveal .exp.big{
   font-size:30px;
+}
+
+
+.center{
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }

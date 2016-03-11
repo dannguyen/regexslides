@@ -1,0 +1,22 @@
+<div class="meta">
+  <h3 class="title">Looking for just the lawyers who contribute</h3>
+  <pre class="exp shell">
+ack 'LAWYER|ATTORNEY' indiv-contributions.txt
+  </pre>
+
+
+<div id="player-fec-lawyers"></div>
+<script>
+  asciinema_player.core.CreatePlayer(
+          'player-fec-lawyers', 'ascii-jsons/fec-lawyers.json',
+          {
+             autoPlay: false, speed: 2, fontSize: '19px',
+             theme: 'monokai',
+             poster: "data:text/plain,$ ack 'LAWYER|ATTORNEY' indiv-contributions.txt"
+           }
+        );
+</script>
+
+
+
+</div>

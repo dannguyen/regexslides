@@ -3,20 +3,20 @@
   <h3 class="title">Print the frequency of tweets per month</h3>
   <pre class="exp">
 csvcut -c 'Posted at' realdonaldtrump.csv |
-  ack -o '(?<= )\d{2}(?=:)' |
-  sort | uniq -c
+  ack -o '\d{4}-\d{2}' |
+  sort | uniq -c |
+  ack '(\d+) (.+)' --output '$2,$1'
 </pre>
 </div>
 
 <pre class="f9 b9">
- 212 2015-07
- 441 2015-08
- 441 2015-09
- 815 2015-10
- 599 2015-11
- 634 2015-12
- 492 2016-01
- 495 2016-02
- 152 2016-03
+2015-07,212
+2015-08,441
+2015-09,441
+2015-10,815
+2015-11,599
+2015-12,634
+2016-01,492
+2016-02,495
+2016-03,152
 </pre>
-

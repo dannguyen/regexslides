@@ -1,0 +1,18 @@
+<div class="meta">
+  <h3 class="title">Looking for just the lawyers who contribute</h3>
+  <pre class="exp shell">
+ack 'LAWYER|ATTORNEY' indiv-contributions.txt |
+  csvformat -d '|' > lawyers.csv</pre>
+  <ul class="pseudo">
+    <li>Search for <code>LAWYER</code> or <code>ATTORNEY</code></li>
+    <li>Convert the pipe-delimiters to commas</li>
+    <li>Dump the text into <code>lawyers.csv</code></li>
+  </ul>
+</div>
+
+
+<p><strong>Result</strong>:
+<strong>89,034 rows</strong> (small enough for Excel).</p>
+
+<img src="images/fec-lawyers-excel.png" alt="fec-lawyers-excel.png">
+

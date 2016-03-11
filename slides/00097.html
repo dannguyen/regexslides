@@ -1,0 +1,18 @@
+<div class="meta">
+  <h3 class="title">
+   Does the Mashantucket Pequot know how to spell Mashantucket?
+  </h3>
+  <pre class="exp shell">
+ack -o 'MASH[A-Z]+CKET' indiv-contributions.txt |
+  sort | uniq -c
+</pre>
+<ul class="pseudo">
+  <li>Search for <code>MASH</code>, followed by <code>one-or-more uppercase letters, followed by <code>CKET</code></code></li>
+</ul>
+</div>
+
+
+<pre class="big">
+   2 MASHANFUCKET
+  56 MASHANTUCKET
+</pre>

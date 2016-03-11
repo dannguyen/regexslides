@@ -826,18 +826,352 @@ ack -o '\w+ \w+ @nyt\w+ \w+'  realdonaldtrump.csv |
   </p>
 
 <pre class="exp shell big" data-trim><code>
-csvcut -c 'column_name_1,column_name_9'
+csvcut -c 'column_name_1,column_name_9' somefile
 </code></pre>
 </section>
 <section class="slide">
+
+<div class="meta">
+  <h3 class="title">Just print the "Posted at" column</h3>
+  <pre class="exp shell">
+csvcut -c 'Posted at' realdonaldtrump.csv
+</pre>
+</div>
+
+
+<pre>
+Posted at
+2016-03-10 16:15:45 +0000
+2016-03-10 00:20:48 +0000
+2016-03-10 00:17:39 +0000
+2016-03-09 23:00:30 +0000
+2016-03-09 22:39:30 +0000
+2016-03-09 21:46:12 +0000
+2016-03-09 07:36:16 +0000
+2016-03-09 03:58:28 +0000
+2016-03-09 02:10:20 +0000
+2016-03-09 02:02:25 +0000
+2016-03-09 01:28:43 +0000
+2016-03-09 01:14:50 +0000
+2016-03-09 01:12:46 +0000
+2016-03-08 23:58:02 +0000
+2016-03-08 23:53:48 +0000
+</pre>
 </section>
 <section class="slide">
+
+<div class="meta">
+  <h3 class="title">Matching year and month in the timestamp</h3>
+  <pre class="exp">
+csvcut -c 'Posted at' realdonaldtrump.csv |
+  ack '\d{4}-\d{2}'
+</pre>
+  <ul class="pseudo">
+    <li>Print only the <code>Posted at</code> column</li>
+    <li>Match 4 digits, followed by a hypen, followed by 2 digits</li>
+  </ul>
+</div>
+
+<pre class="f9 b9">
+<span class="b5"><span class="bold">2016-03</span></span>-10 16:15:45 +0000
+<span class="b5"><span class="bold">2016-03</span></span>-10 00:20:48 +0000
+<span class="b5"><span class="bold">2016-03</span></span>-10 00:17:39 +0000
+<span class="b5"><span class="bold">2016-03</span></span>-09 23:00:30 +0000
+<span class="b5"><span class="bold">2016-03</span></span>-09 22:39:30 +0000
+<span class="b5"><span class="bold">2016-03</span></span>-09 21:46:12 +0000
+<span class="b5"><span class="bold">2016-03</span></span>-09 07:36:16 +0000
+<span class="b5"><span class="bold">2016-03</span></span>-09 03:58:28 +0000
+<span class="b5"><span class="bold">2016-03</span></span>-09 02:10:20 +0000
+<span class="b5"><span class="bold">2016-03</span></span>-09 02:02:25 +0000
+<span class="b5"><span class="bold">2016-03</span></span>-09 01:28:43 +0000
+<span class="b5"><span class="bold">2016-03</span></span>-09 01:14:50 +0000
+<span class="b5"><span class="bold">2016-03</span></span>-09 01:12:46 +0000
+<span class="b5"><span class="bold">2016-03</span></span>-08 23:58:02 +0000
+</pre>
+
 </section>
 <section class="slide">
+
+<div class="meta">
+  <h3 class="title">Print the frequency of tweets per month</h3>
+  <pre class="exp">
+csvcut -c 'Posted at' realdonaldtrump.csv |
+  ack -o '(?<= )\d{2}(?=:)' |
+  sort | uniq -c
+</pre>
+</div>
+
+<pre class="f9 b9">
+ 212 2015-07
+ 441 2015-08
+ 441 2015-09
+ 815 2015-10
+ 599 2015-11
+ 634 2015-12
+ 492 2016-01
+ 495 2016-02
+ 152 2016-03
+</pre>
+
 </section>
 <section class="slide">
+
+<div class="meta">
+  <h3 class="title">Print the frequency of tweets per month</h3>
+  <pre class="exp">
+csvcut -c 'Posted at' realdonaldtrump.csv |
+  ack -o '\d{4}-\d{2}' |
+  sort | uniq -c |
+  ack '(\d+) (.+)' --output '$2,$1'
+</pre>
+</div>
+
+<pre class="f9 b9">
+2015-07,212
+2015-08,441
+2015-09,441
+2015-10,815
+2015-11,599
+2015-12,634
+2016-01,492
+2016-02,495
+2016-03,152
+</pre>
 </section>
 <section class="slide">
+
+<div class="meta">
+  <h3 class="title">Import realdonaldtrump's tweet frequency in Excel</h3>
+</div>
+
+<img src="images/trump-tweets-years.jpg" alt="trump-tweets-years.jpg">
+</section>
+<section class="slide">
+
+<div class="meta">
+  <h3 class="title">Print the frequency of tweets per day</h3>
+  <pre class="exp">
+csvcut -c 'Posted at' realdonaldtrump.csv |
+  ack -o '\d{4}-\d{2}-\d{2}' |
+  sort | uniq -c |
+  ack '(\d+) (.+)' --output '$2,$1'
+</pre>
+</div>
+
+<img style="width: 78%;" src="images/trump-tweets-excel-days.jpg" alt="trump-tweets-excel-days.jpg">
+
+<pre style="width: 20%; float:left;">
+2015-07-25,22
+2015-07-26,39
+2015-07-27,48
+2015-07-28,33
+2015-07-29,28
+2015-07-30,27
+2015-07-31,15
+2015-08-01,7
+2015-08-02,3
+2015-08-03,47
+2015-08-04,29
+2015-08-05,21
+2015-08-06,18
+2015-08-07,60
+2015-08-08,9
+2015-08-09,14
+</pre>
+
+
+</section>
+<section class="slide">
+
+<div class="meta">
+  <h3 class="title">Print the frequency of tweets per hour</h3>
+  <pre class="exp">
+csvcut -c 'Posted at' realdonaldtrump.csv |
+  ack -o '(?<= )\d{2}(?=:)' |
+  sort | uniq -c |
+  ack '(\d+) (.+)' --output '$2,$1'
+</pre>
+</div>
+
+
+<img style="width: 78%;" src="images/trump-tweets-excel-hours.jpg" alt="trump-tweets-excel-hours.jpg">
+
+<pre style="width: 20%; float:left;">
+00,250
+01,248
+02,264
+03,255
+04,138
+05,89
+06,50
+07,23
+08,42
+09,57
+10,85
+11,174
+12,230
+13,242
+14,216
+15,233
+16,194
+17,190
+18,198
+19,237
+20,231
+21,211
+22,187
+23,237
+</pre>
+
+
+</section>
+<section class="slide">
+<h2>Dealing with Big (for Excel) data as text</h2>
+</section>
+<section class="slide">
+<h3 class="title">
+  The Federal Election Commissions Individual Donors list
+</h3>
+
+<div class="center">
+<img class="center" src="images/fec-database-list.png" alt="fec-database-list.png">
+</div>
+
+<p>Up to 1.3 million records for 2015-2016 alone</p>
+
+<aside class="notes">
+  http://www.fec.gov/finance/disclosure/ftpdet.shtml#a2015_2016
+</aside>
+
+
+</section>
+<section class="slide">
+<h3 class="title">
+  Trying to import the individual donors data into Excel
+</h3>
+
+
+
+<div class="center"><img class="center" src="images/excel-import-pipes.png" alt="excel-import-pipes.png" style="height:500px;">
+</div>
+</section>
+<section class="slide">
+<h4 class="title">But Excel can't handle more than a million rows.</h4>
+
+<img src="images/excel-import-pipes-FAIL.png" alt="excel-import-pipes-FAIL.png">
+
+</section>
+<section class="slide">
+
+  <h2 class="title">
+    <code>csvgrep</code>
+  </h2>
+
+
+  <p>
+    Grep across selected columns (rather than the whole line)
+  </p>
+
+<pre class="exp shell big" data-trim><code>
+csvcut -c 'column_name_1' -r 'mypattern' somefile
+</code></pre>
+</section>
+<section class="slide">
+  <h3 class="title">Filtering individual contributors by (self-proclaimed) job title</h3>
+
+
+
+<aside class="notes">
+  http://www.fec.gov/finance/disclosure/metadata/DataDictionaryContributionsbyIndividuals.shtml
+</aside>
+</section>
+<section class="slide">
+<div class="meta">
+  <h3 class="title">Looking for just the lawyers who contribute</h3>
+  <pre class="exp shell">
+ack 'LAWYER|ATTORNEY' indiv-contributions.txt
+  </pre>
+
+
+<div id="player-fec-lawyers"></div>
+<script>
+  asciinema_player.core.CreatePlayer(
+          'player-fec-lawyers', 'ascii-jsons/fec-lawyers.json',
+          {
+             autoPlay: false, speed: 2, fontSize: '19px',
+             theme: 'monokai',
+             poster: "data:text/plain,$ ack 'LAWYER|ATTORNEY' indiv-contributions.txt"
+           }
+        );
+</script>
+
+
+
+</div>
+</section>
+<section class="slide">
+<div class="meta">
+  <h3 class="title">Looking for just the lawyers who contribute</h3>
+  <pre class="exp shell">
+ack 'LAWYER|ATTORNEY' indiv-contributions.txt |
+  csvformat -d '|' > lawyers.csv</pre>
+  <ul class="pseudo">
+    <li>Search for <code>LAWYER</code> or <code>ATTORNEY</code></li>
+    <li>Convert the pipe-delimiters to commas</li>
+    <li>Dump the text into <code>lawyers.csv</code></li>
+  </ul>
+</div>
+
+
+<p><strong>Result</strong>:
+<strong>89,034 rows</strong> (small enough for Excel).</p>
+
+<img src="images/fec-lawyers-excel.png" alt="fec-lawyers-excel.png">
+
+</section>
+<section class="slide">
+<h2>Moving fast is fun!</h2>
+</section>
+<section class="slide">
+<div class="meta">
+  <h3 class="title">
+    Do you know how to spell "Masha...cket Pequot"?
+  </h3>
+  <pre class="exp shell">
+ack 'MASH[A-Z]+CKET' indiv-contributions.txt</pre>
+<ul class="pseudo">
+  <li>Search for <code>MASH</code>, followed by <code>one-or-more uppercase letters, followed by <code>CKET</code></code></li>
+</ul>
+</div>
+
+
+<pre class="f9 b9">
+C00499947|A|Q2|P|201507229000355836|11|IND|TRIBAL NATION, <span class="b5"><span class="bold">MASHANTUCKET</span></span> PEQUOT|<span class="b5"><span class="bold">MASHANTUCKET</span></span>|CT|063383008|<span class="b5"><span class="bold">MASHANTUCKET</span></span> PEQUOT TRIBAL NATION|INDIAN TRIBE|06292015|2700||C10408456|1017371|||4072320151247723686
+C00350520|N|Q2|P|201507159000168044|11|ORG|<span class="b5"><span class="bold">MASHANTUCKET</span></span> PEQUOT TRIBAL NATION|<span class="b5"><span class="bold">MASHANTUCKET</span></span>|CT|06338|||06292015|1000||INCA57787|1015196|||4071520151247122864
+C00459925|N|MY|P|201507309000462796|11|ORG|<span class="b5"><span class="bold">MASHANTUCKET</span></span> PEQUOT TRIBAL NATION|<span class="b5"><span class="bold">MASHANTUCKET</span></span>|CT|063383008|||06302015|400||C9365215|1019170|||4073120151248086910
+C00505552|N|Q2|P|201507150200189449|11||<span class="b5"><span class="bold">MASHANTUCKET</span></span> PEQUOT TRIBAL NATION|<span class="b5"><span class="bold">MASHANTUCKET</span></span>|CT|063383008|||05132015|2700||SA072715944929|1018152|||2072820151247977899
+C00167320|N|M8|P|201508209000867724|11|ORG|<span class="b5"><span class="bold">MASHANTUCKET</span></span> PEQUOT TRIBAL NATION|<span class="b5"><span class="bold">MASHANTUCKET</span></span>|CT|06338|||07102015|1185||C21496835|1022541|||4082020151249343429   </pre>
+
+</section>
+<section class="slide">
+<div class="meta">
+  <h3 class="title">
+   Does the Mashantucket Pequot know how to spell Mashantucket?
+  </h3>
+  <pre class="exp shell">
+ack -o 'MASH[A-Z]+CKET' indiv-contributions.txt |
+  sort | uniq -c
+</pre>
+<ul class="pseudo">
+  <li>Search for <code>MASH</code>, followed by <code>one-or-more uppercase letters, followed by <code>CKET</code></code></li>
+</ul>
+</div>
+
+
+<pre class="big">
+   2 MASHANFUCKET
+  56 MASHANTUCKET
+</pre>
 </section>
 <section class="slide">
 </section>
@@ -864,21 +1198,23 @@ csvcut -c 'column_name_1,column_name_9'
 
             </div>
         </div>
+<!--      <script src="js/plugins/head.min.js"></script>
+ -->
         <script src="js/reveal.js"></script>
         <script>
             Reveal.initialize(
                 { history: true,
                   center: true,
-                  slideNumber: true
-                }
-            );
+                  slideNumber: true,
+        // dependencies: [
+        //   { src: 'js/plugins/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad();}
+        //   }
+        // ]
 
-            // Reveal.configure({
-            //   keyboard: {
-            //     13: 'next', // go to the next slide when the ENTER key is pressed
-            //     32: null // don't do anything when SPACE is pressed (i.e. disable a reveal.js default binding)
-            //   }
-            // });
+      });
+
+
+
         </script>
 
 
