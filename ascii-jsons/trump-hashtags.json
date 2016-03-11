@@ -1,0 +1,514 @@
+{
+  "version": 1,
+  "width": 96,
+  "height": 19,
+  "duration": 20.393326,
+  "command": "/bin/bash",
+  "title": "",
+  "env": {
+    "TERM": "xterm-256color",
+    "SHELL": "/bin/bash"
+  },
+  "stdout": [
+    [
+      0.007206,
+      "\u001b[?1034h"
+    ],
+    [
+      0.000013,
+      "bash-3.2$ "
+    ],
+    [
+      1.383950,
+      "a"
+    ],
+    [
+      0.000029,
+      "ck -o"
+    ],
+    [
+      1.072052,
+      " '#\\"
+    ],
+    [
+      0.000037,
+      "w+'"
+    ],
+    [
+      1.663791,
+      " "
+    ],
+    [
+      0.000009,
+      "re"
+    ],
+    [
+      0.000005,
+      "a"
+    ],
+    [
+      0.000038,
+      "ldon"
+    ],
+    [
+      0.000005,
+      "a"
+    ],
+    [
+      0.000019,
+      "l"
+    ],
+    [
+      0.000004,
+      "d"
+    ],
+    [
+      0.000016,
+      "t"
+    ],
+    [
+      0.000004,
+      "r"
+    ],
+    [
+      0.000015,
+      "u"
+    ],
+    [
+      0.000005,
+      "m"
+    ],
+    [
+      0.000007,
+      "p"
+    ],
+    [
+      0.000015,
+      "."
+    ],
+    [
+      0.000005,
+      "c"
+    ],
+    [
+      0.000018,
+      "s"
+    ],
+    [
+      0.000004,
+      "v"
+    ],
+    [
+      1.839134,
+      " "
+    ],
+    [
+      0.000010,
+      "|"
+    ],
+    [
+      0.000005,
+      " "
+    ],
+    [
+      0.000034,
+      "s"
+    ],
+    [
+      0.000004,
+      "o"
+    ],
+    [
+      0.000032,
+      "r"
+    ],
+    [
+      0.000004,
+      "t"
+    ],
+    [
+      1.447516,
+      " "
+    ],
+    [
+      0.000010,
+      "|"
+    ],
+    [
+      0.000081,
+      " "
+    ],
+    [
+      0.000007,
+      "uni"
+    ],
+    [
+      0.000043,
+      "q"
+    ],
+    [
+      0.000048,
+      " "
+    ],
+    [
+      0.000006,
+      "-"
+    ],
+    [
+      0.000022,
+      "c"
+    ],
+    [
+      1.359062,
+      " "
+    ],
+    [
+      0.000009,
+      "|"
+    ],
+    [
+      0.000074,
+      " "
+    ],
+    [
+      0.000007,
+      "s"
+    ],
+    [
+      0.000004,
+      "o"
+    ],
+    [
+      0.000034,
+      "r"
+    ],
+    [
+      0.000008,
+      "t"
+    ],
+    [
+      0.000027,
+      " "
+    ],
+    [
+      0.000023,
+      "-"
+    ],
+    [
+      0.000028,
+      "n"
+    ],
+    [
+      1.286502,
+      "\r\n"
+    ],
+    [
+      0.104987,
+      "   1 #12HR\r\n   1 #17\r\n   1 #1for\r\n   1 #2016\r\n   1 #2016GOPNOMINATION\r\n   1 #28\r\n   1 #2A\r\n   1 #9pm\r\n   1 #AC360\r\n   1 #AMERICAN\r\n   1 #ActingMeek\r\n   1 #Alabama\r\n   1 #AlisaReal\r\n   1 #AlwaysTrump\r\n   1 #Amazon\r\n"
+    ],
+    [
+      0.000033,
+      "   1 #AmericaGreatAgain\r\n   1 #AmericanPride\r\n   1 #Americans\r\n   1 #August\r\n   1 #BeCool\r\n   1 #BenghaziHearings\r\n   1 #BikersForTrump\r\n   1 #BuildTheFence\r\n   1 #C2GTHR\r\n   1 #CBN2016\r\n   1 #CBNNews\r\n   1 #CNNSocialistDebate\r\n   1 #Carrier\r\n   1 #Carson\r\n   1 #ChangeTheWorldIn5Words\r\n   1 #CitizensForTrump\r\n   1 #CoalitionForTrump\r\n   1 #Colbert\r\n   1 #CommonLaw\r\n   1 #Cruz\r\n   1 #CruzCrew\r\n   1 #CruzFraud\r\n   1 #DC\r\n   1 #DEBATE\r\n   1 #DNC\r\n   1 #DavidCameron\r\n   1 #DealWithIt\r\n   1 #Debate\r\n   1 #Dem\r\n   1 #DemocratsForTrump\r\n   1 #DocinMich\r\n   1 #Doonbeg\r\n   1 #DumpMacys\r\n   1 #ECONOMY\r\n   1 #ElectTrump\r\n   1 #Establishment\r\n   1 #EverybodyRockW\r\n   1 #Excellent\r\n   1 #FAIL\r\n   1 #FNS\r\n   1 #FlashbackFriday\r\n   1 #Ford\r\n   1 #FoxDebate\r\n   1 #GOBDebate\r\n   1 #GPLFers\r\n   1 #GoGoGo\r\n   1 #GoldenGlobe\r\n   1 #GoodLuck\r\n   1 #GoogleTrends\r\n   1 #Greta\r\n   1 #HUGE\r\n"
+    ],
+    [
+      0.000011,
+      "   1 #HappyNewYearAmerica\r\n   1 #HarveyPitt\r\n   1 #HellJustFrozeOver\r\n   1 #HillaryForPrison2016\r\n   1 #Hypocrisy\r\n   1 #IA\r\n   1 #IAForums\r\n   1 #IBelieve\r\n   1 #IPSOS\r\n   1 #InterestingTimesAhead\r\n   1 #Iowan\r\n   1 #ItIsntAboutHer\r\n   1 #JEBbush\r\n   1 #JebBush\r\n   1 #Jobs\r\n   1 #JoeTheismann\r\n   1 #Jonas\r\n   1 #KansasCaucus\r\n   1 #KeepingItReal\r\n   1 #KellyFile\r\n   1 #KenLangone\r\n   1 #LEO\r\n   1 #LSSC\r\n   1 #Laredo\r\n   1 #Laurence\r\n   1 #LaurenceTribe\r\n   1 #LightweightSenatorMarcoRubio\r\n"
+    ],
+    [
+      0.000008,
+      "   1 #LittleMarco\r\n   1 #LoneStarState\r\n   1 #MAGA\r\n   1 #MAKEAMERICAGREATAGAI\r\n   1 #MSPrimary\r\n   1 #MTP\r\n   1 #Mahalo\r\n   1 #MaitnerStrong\r\n   1 #MakeAmericasMilitaryGreatAgain\r\n   1 #MakeYoutubeGreatAgain\r\n   1 #MarALago\r\n   1 #MarkLevin\r\n   1 #Mayor\r\n   1 #MediaBuzz\r\n"
+    ],
+    [
+      0.000007,
+      "   1 #Mediafraud\r\n   1 #Mexico\r\n   1 #MichaelMoore\r\n   1 #MissUniverse\r\n   1 #MissUniverse2015\r\n   1 #Mississippi\r\n   1 #Monmouth\r\n   1 #MorningJoe\r\n   1 #NASCAR\r\n   1 #NBC\r\n   1 #NOISYMAJORITY\r\n"
+    ],
+    [
+      0.000007,
+      "   1 #NTXForum\r\n   1 #NaturalBorn\r\n   1 #NeilCavuto\r\n   1 #NewDay\r\n   1 #NewJersey\r\n   1 #NewYork\r\n   1 #NewYorkValues\r\n"
+    ],
+    [
+      0.000008,
+      "   1 #News\r\n   1 #NoClintonInWHEverAgain\r\n   1 #NoIranDeal\r\n   1 #NoLoyalty\r\n   1 #NorthCarolina\r\n   1 #OAN\r\n   1 #OhMe\r\n   1 #POTUS2016\r\n   1 #PUNDITS\r\n"
+    ],
+    [
+      0.000008,
+      "   1 #PearlHarbor\r\n   1 #PoliticallyCorrect\r\n   1 #Politician\r\n   1 #Politics\r\n   1 #PotusYoureFired\r\n   1 #REDNATION\r\n   1 #ROGERAILES\r\n   1 #Raleigh\r\n   1 #RememberOurVets\r\n   1 #RepealObamacare\r\n   1 #Republicanpresidentialdebate\r\n"
+    ],
+    [
+      0.000007,
+      "   1 #Republicans\r\n   1 #Reuters\r\n   1 #ReutersPoll\r\n   1 #RobartsArena\r\n   1 #RobotRubio\r\n   1 #RogerStone\r\n   1 #RonaldReagan\r\n   1 #RushLimbaugh\r\n   1 #SB50\r\n   1 #STOPTHEPRESSES\r\n"
+    ],
+    [
+      0.000007,
+      "   1 #SeanHannity\r\n   1 #SilentMajorityIsBack\r\n   1 #SnowflakeGardenBrunch\r\n   1 #SomethingSpecialIsHappening\r\n   1 #SouthCarolina\r\n   1 #SouthCarolinaPrimary\r\n   1 #StayStrong\r\n"
+    ],
+    [
+      0.000002,
+      "   1 #StopCommonCore\r\n   1 #StopIranDeal\r\n   1 #StopTheLies\r\n   1 #StraightTalk\r\n"
+    ],
+    [
+      0.000007,
+      "   1 #SuperBowlSunday\r\n   1 #SyrianRefugees\r\n   1 #THEDonald\r\n   1 #TRUMPDOG\r\n   1 #TRUMp2016\r\n   1 #TRUTH\r\n   1 #Tcot\r\n   1 #TeamTrump16\r\n   1 #TeamTrumpPA\r\n"
+    ],
+    [
+      0.000002,
+      "   1 #Ted\r\n   1 #Texas\r\n   1 #ThankAVet\r\n   1 #TheRemembranceProject\r\n"
+    ],
+    [
+      0.000007,
+      "   1 #TheyRMad\r\n   1 #ToughPRESIDENT\r\n   1 #ToughTimes\r\n   1 #Trump16\r\n   1 #Trump2015\r\n   1 #Trump4President\r\n   1 #Trump4Vets\r\n   1 #TrumpInAL\r\n   1 #TrumpInstagram\r\n"
+    ],
+    [
+      0.000007,
+      "   1 #TrumpIsRight\r\n   1 #TrumpLV\r\n   1 #TrumpNV\r\n   1 #TrumpOnCNN\r\n   1 #TrumpRallyAL\r\n   1 #TrumpRocksAmerica\r\n   1 #TrumpSupporters\r\n"
+    ],
+    [
+      0.000007,
+      "   1 #TrumpSwagger\r\n   1 #TrumpTower\r\n   1 #TrumpTowerNY\r\n   1 #TrumpTowerNYC\r\n   1 #TrumpTsunami\r\n   1 #TrumpWaikiki\r\n   1 #Trumponly\r\n   1 #Trumptrain\r\n   1 #Truth\r\n"
+    ],
+    [
+      0.000002,
+      "   1 #Tump2016\r\n   1 #TurntTrump\r\n   1 #Twendency\r\n   1 #USADJT2016\r\n"
+    ],
+    [
+      0.000010,
+      "   1 #VOTETRUMP\r\n   1 #VoteTrumpHI\r\n   1 #VoteTrumpID\r\n   1 #VoteTrumpIL\r\n   1 #VoteTrumpKS\r\n   1 #VoteTrumpMA\r\n   1 #VoteTrumpMS\r\n   1 #VoteTrumpNC\r\n   1 #VoteTrumpVT\r\n   1 #VotersSpeak\r\n   1 #WATCH\r\n"
+    ],
+    [
+      0.000002,
+      "   1 #WE\r\n   1 #WH\r\n   1 #WTF\r\n   1 #WeAreBernie\r\n   1 #WeWantTrump\r\n   1 #WhyISupportTrump\r\n"
+    ],
+    [
+      0.000002,
+      "   1 #WinnersArentLosers\r\n   1 #Wisconsin\r\n   1 #With_Cruz_you_lose\r\n"
+    ],
+    [
+      0.000002,
+      "   1 #YomKippur\r\n   1 #Yourworld\r\n"
+    ],
+    [
+      0.000012,
+      "   1 #apologize\r\n   1 #artofwar\r\n   1 #asksean\r\n   1 #bamaforTrump\r\n   1 #boycottKellyFile\r\n   1 #ccot\r\n   1 #citizenship\r\n   1 #democraticdebate\r\n   1 #economy\r\n   1 #fairandbalancedmyass\r\n   1 #fox\r\n   1 #gop\r\n"
+    ],
+    [
+      0.000003,
+      "   1 #here\r\n   1 #hotsteam\r\n   1 #iCaucused\r\n   1 #iVoted\r\n   1 #iacaucus\r\n   1 #immigration\r\n"
+    ],
+    [
+      0.000002,
+      "   1 #inspiration\r\n   1 #landslide\r\n   1 #laurencetribe\r\n"
+    ],
+    [
+      0.000002,
+      "   1 #lets\r\n   1 #mediabuzz\r\n   1 #mexicolovestrump\r\n"
+    ],
+    [
+      0.000002,
+      "   1 #military\r\n   1 #news\r\n   1 #notapuppet\r\n"
+    ],
+    [
+      0.000002,
+      "   1 #pathetic\r\n   1 #pjnet\r\n   1 #politician\r\n"
+    ],
+    [
+      0.000002,
+      "   1 #poll\r\n   1 #realdonaldtrump\r\n   1 #restrictive\r\n"
+    ],
+    [
+      0.000002,
+      "   1 #saturday\r\n   1 #saturdaynightlive\r\n"
+    ],
+    [
+      0.000003,
+      "   1 #silentmajority\r\n   1 #stump4trumpbaby\r\n"
+    ],
+    [
+      0.000002,
+      "   1 #tellingitlikeitis\r\n   1 #thedonald\r\n"
+    ],
+    [
+      0.000002,
+      "   1 #trainwreck\r\n   1 #truth\r\n   1 #tryme\r\n"
+    ],
+    [
+      0.000002,
+      "   1 #unload\r\n   1 #usa\r\n   1 #vaticanwalls\r\n"
+    ],
+    [
+      0.000002,
+      "   1 #veterans\r\n   1 #victory\r\n"
+    ],
+    [
+      0.000008,
+      "   1 #virginiabeach\r\n   1 #voteDonaldTrump\r\n   1 #voteTrump2016\r\n   1 #wakeupamerica\r\n   1 #winner\r\n   1 #wrong\r\n   2 #2016election\r\n   2 #ABC2020\r\n"
+    ],
+    [
+      0.000002,
+      "   2 #America\r\n   2 #BoycottMacys\r\n   2 #Bush\r\n   2 #CNBCGOPDebate\r\n   2 #ChrisWallace\r\n"
+    ],
+    [
+      0.000002,
+      "   2 #CommonCore\r\n   2 #Crowd\r\n   2 #DonaldTrumpForPresident\r\n"
+    ],
+    [
+      0.000002,
+      "   2 #Florida\r\n   2 #HispanicsForTrump\r\n   2 #IAPolitics\r\n"
+    ],
+    [
+      0.000002,
+      "   2 #IOWA\r\n   2 #Iowa\r\n"
+    ],
+    [
+      0.000003,
+      "   2 #IowaCaucus\r\n   2 #Kimmel\r\n"
+    ],
+    [
+      0.000002,
+      "   2 #LESM\r\n   2 #MakeAmerciaGreatAgain\r\n"
+    ],
+    [
+      0.000002,
+      "   2 #MaryBrigidMcManamon\r\n   2 #Media\r\n"
+    ],
+    [
+      0.000002,
+      "   2 #MeetTheTrumps\r\n   2 #NVcaucus\r\n   2 #NewHampshire\r\n"
+    ],
+    [
+      0.000002,
+      "   2 #Obamacare\r\n   2 #RNC\r\n   2 #Reagan\r\n"
+    ],
+    [
+      0.000002,
+      "   2 #RepublicanDebate\r\n   2 #Rubio\r\n"
+    ],
+    [
+      0.000002,
+      "   2 #SOTU\r\n   2 #SuperSaturday\r\n   2 #TBT\r\n"
+    ],
+    [
+      0.000002,
+      "   2 #TedCruz\r\n   2 #TrumpOnSNL\r\n"
+    ],
+    [
+      0.000002,
+      "   2 #TrumpOrNobody2016\r\n   2 #TrumpToday\r\n   2 #TrumpTrainSNL\r\n"
+    ],
+    [
+      0.000002,
+      "   2 #USSYorktown\r\n   2 #VVS15\r\n   2 #democratsfortrump\r\n"
+    ],
+    [
+      0.000002,
+      "   2 #morningjoe\r\n   3 #4\r\n   3 #Benghazi\r\n"
+    ],
+    [
+      0.000002,
+      "   3 #Biloxi\r\n   3 #Election2016\r\n"
+    ],
+    [
+      0.000002,
+      "   3 #Fox\r\n   3 #FoxNews\r\n"
+    ],
+    [
+      0.000002,
+      "   3 #IranDeal\r\n   3 #MAKEAMERICAGREATAGAIN\r\n"
+    ],
+    [
+      0.000002,
+      "   3 #NYC\r\n   3 #OnTheRecord\r\n"
+    ],
+    [
+      0.000002,
+      "   3 #SilentMajority\r\n   3 #TrumpArmy\r\n"
+    ],
+    [
+      0.000002,
+      "   3 #TrumpTODAY\r\n   3 #VoteTrumpMI\r\n   3 #abc2020\r\n"
+    ],
+    [
+      0.000002,
+      "   4 #GOPdebate\r\n   4 #GoTrump\r\n   4 #HBO\r\n"
+    ],
+    [
+      0.000002,
+      "   4 #ICYMI\r\n   4 #MSM\r\n"
+    ],
+    [
+      0.000002,
+      "   4 #NHPolitics\r\n   4 #NevadaCaucus\r\n   4 #ObamaCare\r\n"
+    ],
+    [
+      0.000002,
+      "   4 #Periscope\r\n   4 #RT\r\n   4 #WakeUpAmerica\r\n"
+    ],
+    [
+      0.000002,
+      "   4 #makeamericagreatagain\r\n   4 #trump\r\n   5 #3\r\n"
+    ],
+    [
+      0.000002,
+      "   5 #AskTrump\r\n   5 #TRUMP\r\n   5 #TRUMP2016\r\n"
+    ],
+    [
+      0.000002,
+      "   5 #TrumpForPresident\r\n   5 #USA\r\n"
+    ],
+    [
+      0.000002,
+      "   5 #YUGE\r\n   6 #CNN\r\n   6 #Hannity\r\n"
+    ],
+    [
+      0.000002,
+      "   6 #ISIS\r\n   6 #tcot\r\n"
+    ],
+    [
+      0.000002,
+      "   7 #NHPrimary\r\n   7 #SCPrimary\r\n"
+    ],
+    [
+      0.000002,
+      "   7 #VoteTrumpNV\r\n"
+    ],
+    [
+      0.000002,
+      "   8 #DonaldTrump\r\n   8 #VoteTrumpNH\r\n"
+    ],
+    [
+      0.000002,
+      "   9 #CrippledAmerica\r\n   9 #VoteTrumpSC\r\n   9 #trump2016\r\n"
+    ],
+    [
+      0.000002,
+      "  10 #2\r\n  10 #CNNDebate\r\n  10 #CaucusForTrump\r\n"
+    ],
+    [
+      0.000002,
+      "  10 #VoteTrump2016\r\n  12 #asktrump\r\n  13 #POTUS\r\n"
+    ],
+    [
+      0.000002,
+      "  13 #SuperTuesday\r\n  16 #GOP\r\n  16 #TrumpTrain\r\n"
+    ],
+    [
+      0.000003,
+      "  18 #SNL\r\n  21 #TeamTrump\r\n  22 #IACaucus\r\n"
+    ],
+    [
+      0.000002,
+      "  29 #Trump\r\n  30 #FITN\r\n  30 #VoteTrump\r\n"
+    ],
+    [
+      0.000002,
+      "  33 #DemDebate\r\n  38 #1\r\n  44 #GOPDebate\r\n"
+    ],
+    [
+      0.000002,
+      " 333 #MakeAmericaGreatAgain\r\n 403 #Trump2016\r\n"
+    ],
+    [
+      0.000499,
+      "bash-3.2$ "
+    ]
+  ]
+}

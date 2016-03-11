@@ -23,33 +23,48 @@
 <a href="http://regex.danwin.com/">http://regex.danwin.com/</a>
 </section>
 <section class="slide">
+<div class="meta">
+  <h3 class="title">Words that begin with "love"</h3>
+  <pre class="exp">\blove</pre>
+
+  <ul class="pseudo">
+    <li>A <strong>word boundary</strong> (e.g. whitespace, punctuation, or beginning of line).</li>
+    <li>Followed immediately by the sequence <code>love</code></li>
+  </ul>
+</div>
 
 
-<div id="player-beta01"></div>
+<pre class="f9 b9 big">
+Chorus  Now old desire doth in his death-bed lie,
+  And young affection gapes to be his heir;
+  That fair for which <span class="b5"><span class="bold">love</span></span> groan'd for and would die,
+  With tender Juliet match'd, is now not fair.
+  Now Romeo is beloved and <span class="b5"><span class="bold">love</span></span>s again,
+  Alike betwitched by the charm of looks,
+  But to his foe supposed he must complain,
+  And she steal <span class="b5"><span class="bold">love</span></span>'s sweet bait from fearful hooks:
+  Being held a foe, he may not have access
+  To breathe such vows as <span class="b5"><span class="bold">love</span></span>rs use to swear;
+  And she as much in <span class="b5"><span class="bold">love</span></span>, her means much less
+  To meet her new-beloved any where:
+  But passion lends them power, time means, to meet
+  Tempering extremities with extreme sweet.
+</pre>
+
+
+</section>
+<section class="slide">
+<div id="player-trump-template"></div>
 <script>
   asciinema_player.core.CreatePlayer(
-          'player-beta01', 'ascii-jsons/0beta.json',
+          'player-trump-template', 'ascii-jsons/trump-hashtags.json',
           {
-             autoPlay: false, speed: 4, fontSize: '19px',
-             theme: 'monokai'
+             autoPlay: false, speed: 2, fontSize: '19px',
+             theme: 'monokai',
+             poster: "data:text/plain,$ ack -ho '\w{15,}' | sort | uniq -c | sort -n"
            }
         );
 </script>
-</section>
-<section class="slide">
-<h2>What we can do with regular expressions</h2>
-
-<pre class="f9 b9">
-title,<span class="b5"><span class="bold">firstname</span></span>,<span class="b5"><span class="bold">middlename</span></span>,<span class="b5"><span class="bold">lastname</span></span>,<span class="b5"><span class="bold">name_suffix</span></span>,<span class="b5"><span class="bold">nickname</span></span>,party,state,<span class="b5"><span class="bold">district</span></span>,<span class="b5"><span class="bold">in_office</span></span>,gender,phone,fax,website,webform,<span class="b5"><span class="bold">congress_office</span></span>,<span class="b5"><span class="bold">bioguide_id</span></span>,<span class="b5"><span class="bold">votesmart_id</span></span>,fec_id,<span class="b5"><span class="bold">govtrack_id</span></span>,crp_id,<span class="b5"><span class="bold">twitter_id</span></span>,<span class="b5"><span class="bold">congresspedia_url</span></span>,<span class="b5"><span class="bold">youtube_url</span></span>,<span class="b5"><span class="bold">facebook_id</span></span>,<span class="b5"><span class="bold">official_rss</span></span>,<span class="b5"><span class="bold">senate_class</span></span>,<span class="b5"><span class="bold">birthdate</span></span>,<span class="b5"><span class="bold">oc_email
-</span></span>Rep,Robert,B.,<span class="b5"><span class="bold">Aderholt</span></span>,,,R,AL,4,1,M,202-225-4876,202-225-5587,https://<span class="b5"><span class="bold">aderholt</span></span>.house.gov,http://<span class="b5"><span class="bold">aderholt</span></span>.house.gov/email-me2/,235 Cannon House Office <span class="b5"><span class="bold">Building</span></span>,A000055,441,<span class="b5"><span class="bold">H6AL04098</span></span>,400004,<span class="b5"><span class="bold">N00003028</span></span>,<span class="b5"><span class="bold">Robert_Aderholt</span></span>,http://www.<span class="b5"><span class="bold">opencongress</span></span>.org/wiki/<span class="b5"><span class="bold">Robert_Aderholt</span></span>,http://youtube.com/<span class="b5"><span class="bold">RobertAderholt</span></span>,<span class="b5"><span class="bold">19787529402</span></span>,,,1965-07-22,Rep.<span class="b5"><span class="bold">Aderholt</span></span>@<span class="b5"><span class="bold">opencongress</span></span>.org
-Sen,Lamar,,<span class="b5"><span class="bold">Alexander</span></span>,,,R,TN,Senior Seat,1,M,202-224-4944,202-228-3398,http://www.<span class="b5"><span class="bold">alexander</span></span>.senate.gov,http://www.<span class="b5"><span class="bold">alexander</span></span>.senate.gov/public/index.cfm?p=Email,455 Dirksen Senate Office <span class="b5"><span class="bold">Building</span></span>,A000360,15691,<span class="b5"><span class="bold">S2TN00058</span></span>,300002,<span class="b5"><span class="bold">N00009888</span></span>,<span class="b5"><span class="bold">SenAlexander</span></span>,http://www.<span class="b5"><span class="bold">opencongress</span></span>.org/wiki/<span class="b5"><span class="bold">Lamar_Alexander</span></span>,http://youtube.com/<span class="b5"><span class="bold">lamaralexander</span></span>,<span class="b5"><span class="bold">89927603836</span></span>,,II,1940-07-03,Sen.<span class="b5"><span class="bold">Alexander</span></span>@<span class="b5"><span class="bold">opencongress</span></span>.org
-
-</pre>
-
-<ul>
-  <li>Find text</li>
-  <li>Find patterns of words</li>
-</ul>
 </section>
 <section class="slide">
 <h2>What we can't do with regular expressions</h2>
@@ -91,10 +106,16 @@ Chorus  Now old desire doth in his death-bed lie,
 <!-- ack 'love' rj.txt  -->
 </section>
 <section class="slide">
-<div class="title">
-  <code>\blove</code>
-  words that begin with "love"
+<div class="meta">
+  <h3 class="title">Words that begin with "love"</h3>
+  <pre class="exp">\blove</pre>
+  <ul class="pseudo">
+    <li>A <strong>word boundary</strong> (e.g. whitespace, punctuation, or beginning of line).</li>
+    <li>Followed immediately by the sequence <code>love</code></li>
+  </ul>
 </div>
+
+
 
 <pre class="f9 b9 big">
 Chorus  Now old desire doth in his death-bed lie,
@@ -114,6 +135,17 @@ Chorus  Now old desire doth in his death-bed lie,
 </pre>
 
 
+
+
+<aside class="notes">
+
+
+
+  <code>
+    ack '\blove' rj.txt  --color |  ansi2html --body-only | pbcopy
+  </code>
+
+</aside>
 </section>
 <section class="slide">
 <div class="title">
@@ -223,9 +255,10 @@ Chorus  Now old desire doth in his death-bed lie,
 </section>
 <section class="slide">
 <div class="title">
-  <code>^[^Tt]+$</code>
-  every line without a single "T" or "t"
+  Every line without a single "T" or "t"
 </div>
+  <code class="exp">^[^Tt]+$</code>
+
 
 <pre class="f9 b9 big">
 Chorus  Now old desire doth in his death-bed lie,
@@ -243,24 +276,6 @@ Chorus  Now old desire doth in his death-bed lie,
   But passion lends them power, time means, to meet
   Tempering extremities with extreme sweet.
 </pre>
-</section>
-<section class="slide">
-<pre class="f9 b9 big">
-
-
-</pre>
-
-
-<!-- ack 'love' rj.txt  -->
-</section>
-<section class="slide">
-<pre class="f9 b9 big">
-
-
-</pre>
-
-
-<!-- ack 'love' rj.txt  -->
 </section>
 <section class="slide">
 <h2>Data cleaning</h2>
@@ -299,6 +314,11 @@ Gizmodo:
 <p class="excerpt"><span class="f0 b3">DONALD TRUMP</span> MAY have bullied his way into the center of the American political arena, but during his Super Tuesday victory speech last week, the real action took place in the margins. That's where you could find Chris Christie apparently lost in reverie, his bewildering expressions instantly stealing the spotlight from <span class="f0 b3">Trump</span>'s choreographed Main Event. Twitter exploded with interpretations. Was he being held hostage? Realizing he had made a Gob Bluth-like "huge mistake"? Experiencing all the stages of grief simultaneously? Suddenly, <span class="f0 b3">Trump</span> was only the nation's second-most-compelling political psychodrama. Within minutes, Viners had re-cut the video, editing <span class="f0 b3">Trump</span> out of the frame entirely and zooming in on Christie's face. The supporting player had become the star.</p>
 
 
+</section>
+<section class="slide">
+
+
+
 <div class="exp">
   Replace: <code class="exp">A Man With The Best Hands</code>
 </div>
@@ -317,15 +337,21 @@ Gizmodo:
 
   <p>
 
-  <strong>globally search a regular expression and print
-  </strong>
+  <em>
+  globally search a regular expression and print
+  </em>
   </p>
-  <p>
-  (a command-line tool
-  for searching
-  plain-text files for lines that match
-  a regex pattern)</p>
 
+<code class="exp">
+  $ ack 'pattern' somefile
+</code>
+
+
+<ul>
+  <li>Open and read a `somefile`, line by line</li>
+  <li>If a line matches the given `pattern`</li>
+  <li>Print that line</li>
+</ul>
 </section>
 <section class="slide">
 <div id="player-rjlove"></div>
@@ -573,6 +599,241 @@ ack -h 'I am (a|an|the) (\w+)' shakespeare/ --output '$2' | sort | uniq -c | sor
   </code>
 </aside>
 
+</section>
+<section class="slide">
+<h3>Use the API to move from the Web...</h3>
+
+
+<img src="images/trump-tweets.jpg" alt="trump-tweets.jpg">
+</section>
+<section class="slide">
+<h3>...to text</h3>
+
+
+<img src="images/trump-tweets-as-csv.png" alt="trump-tweets-as-csv.png">
+
+
+</section>
+<section class="slide">
+<h3>...but not to a spreadsheet (yet)</h3>
+
+<img src="images/trump-tweets-as-spreadsheet.png" alt="trump-tweets-as-spreadsheet.png">
+</section>
+<section class="slide">
+
+<div class="meta">
+  <h3 class="title">Trump's hashtags?</h3>
+  <pre class="exp">#\w+</pre>
+  <ul class="pseudo">
+    <li>The <code>#</code> character</li>
+    <li>Followed by one-or-more word characters</li>
+  </ul>
+</div>
+
+<pre class="f9 b9">
+<span class="b5"><span class="bold">#MakeAmericaGreatAgain</span></span> <span class="b5"><span class="bold">#Trump2016</span></span>&quot;
+707722045224833024,2016-03-10 00:17:39 +0000,realDonaldTrump,I will be giving a lengthy interview to @andersoncooper tonight at 8pmE from Florida. Watch on @CNN! <span class="b5"><span class="bold">#MakeAmericaGreatAgain</span></span> <span class="b5"><span class="bold">#Trump2016
+#LightweightSenatorMarcoRubio</span></span> https://t.co/w7G5vJ511O&quot;
+<span class="b5"><span class="bold">#MakeAmericaGreatAgain</span></span> <span class="b5"><span class="bold">#Trump2016</span></span> https://t.co/hNkkRx66Hc&quot;
+707470040954761216,2016-03-09 07:36:16 +0000,realDonaldTrump,Thank you Hawaii! <span class="b5"><span class="bold">#Trump2016</span></span>
+707388018382995456,2016-03-09 02:10:20 +0000,realDonaldTrump,RT @RSBNetwork: LIVE Stream now: Donald Trump press conference <span class="b5"><span class="bold">#TrumpTrain</span></span> <span class="b5"><span class="bold">#Trump2016</span></span> https://t.co/s7WgNXR27A
+707386022569623552,2016-03-09 02:02:25 +0000,realDonaldTrump,Thank you Michigan! <span class="b5"><span class="bold">#Trump2016</span></span>
+707377544224509952,2016-03-09 01:28:43 +0000,realDonaldTrump,Thank you Mississippi! <span class="b5"><span class="bold">#Trump2016</span></span>
+707374051581362176,2016-03-09 01:14:50 +0000,realDonaldTrump,Thank you! <span class="b5"><span class="bold">#Trump2016</span></span> https://t.co/WvTkL8mMHY
+707373529818386434,2016-03-09 01:12:46 +0000,realDonaldTrump,&quot;Thank you America! <span class="b5"><span class="bold">#Trump2016</span></span>
+</pre>
+
+</section>
+<section class="slide">
+
+<div class="meta">
+  <h3 class="title">realDonaldTrump's most-frequent hashtags?</h3>
+  <pre class="exp shell">ack -o '#\w+' realdonaldtrump.csv |
+   sort | uniq -c | sort -n</pre>
+  <ul class="pseudo">
+    <li>Look for the pattern <code>#\w+</code></li>
+    <li>Print only the match</li>
+    <li>Sort the lines alphabetically</li>
+    <li>Print the count of each unique string</li>
+    <li>Sort the lines numerically</li>
+  </ul>
+</div>
+
+
+
+<div id="player-trump-hashtags"></div>
+<script>
+  asciinema_player.core.CreatePlayer(
+          'player-trump-hashtags', 'ascii-jsons/trump-hashtags.json',
+          {
+             autoPlay: false, speed: 2, fontSize: '19px',
+             theme: 'monokai',
+    poster: "data:text/plain,$ ack -o '#\w+' realdonaldtrump.csv | sort | uniq -c | sort -n"
+           }
+        );
+</script>
+
+
+
+<aside class="notes">
+  <code class="exp shell">
+  ack -o '#\w+' realdonaldtrump.csv |
+   sort |
+   uniq -c |
+   sort -n
+  </code>
+</aside>
+</section>
+<section class="slide">
+
+<div class="meta">
+  <h3 class="title">Who does realDonaldTrump mention?</h3>
+  <pre class="exp">@\w+</pre>
+  <ul class="pseudo">
+    <li>The <code>@</code> character</li>
+    <li>Followed by one-or-more word characters</li>
+  </ul>
+</div>
+
+<pre class="f9 b9">
+707722839684685824,2016-03-10 00:20:48 +0000,realDonaldTrump,&quot;I will be interviewed in a town hall format on <span class="b5"><span class="bold">@FoxNews</span></span> with <span class="b5"><span class="bold">@seanhannity</span></span> at 10pmE. Enjoy!
+707722045224833024,2016-03-10 00:17:39 +0000,realDonaldTrump,I will be giving a lengthy interview to <span class="b5"><span class="bold">@andersoncooper</span></span> tonight at 8pmE from Florida. Watch on <span class="b5"><span class="bold">@CNN</span></span>! #MakeAmericaGreatAgain #Trump2016
+707388018382995456,2016-03-09 02:10:20 +0000,realDonaldTrump,RT <span class="b5"><span class="bold">@RSBNetwork</span></span>: LIVE Stream now: Donald Trump press conference #TrumpTrain #Trump2016 https://t.co/s7WgNXR27A
+707353658883706880,2016-03-08 23:53:48 +0000,realDonaldTrump,&quot;I hear <span class="b5"><span class="bold">@NBCNews</span></span> / <span class="b5"><span class="bold">@WSJ</span></span> came out with another one of their phony polls. While I am leading, they are totally discredited after last S.C. poll&quot;
+707351991807315968,2016-03-08 23:47:11 +0000,realDonaldTrump,RT <span class="b5"><span class="bold">@EricTrump</span></span>: Aloha Hawaii: We would be honored to have your vote! Find your caucus https://t.co/iNgQS80mxX #TrumpWaikiki #Mahalo https://t.co/ggTwDLbSG7
+707226089496690688,2016-03-08 15:26:54 +0000,realDonaldTrump,&quot;&quot;&quot;<span class="b5"><span class="bold">@EricTrump</span></span>: Wishing our father tremendous luck in Michigan, Mississippi, Idaho &amp; Hawaii today! Amazing father! https://t.co/cYpx4eC9W <span class="b5"><span class="bold">@Q</span></span>&quot;&quot;&quot;
+707225181513719808,2016-03-08 15:23:17 +0000,realDonaldTrump,Thank you <span class="b5"><span class="bold">@EricTrump</span></span>! https://t.co/U1iTLmcbAc
+707004752756936704,2016-03-08 00:47:23 +0000,realDonaldTrump,I will be interviewed by <span class="b5"><span class="bold">@SeanHannity</span></span> tonight at 10pm EST on <span class="b5"><span class="bold">@FoxNews</span></span>! Enjoy!
+</pre>
+
+
+<aside class="notes">
+  ack '@\w+' realdonaldtrump.csv  --color | head -n 15 |  ansi2html --body-only | pbcopy
+</aside>
+</section>
+<section class="slide">
+
+<div class="meta">
+  <h3 class="title">Who does realDonaldTrump most frequently mention?</h3>
+  <pre class="exp shell">ack -o '@\w+' realdonaldtrump.csv |
+   sort | uniq -c | sort -n</pre>
+</div>
+
+<pre class="f9 b9">
+  20 @GOP
+  20 @IvankaTrump
+  20 @JoeNBC
+  20 @nytimes
+  20 @politico
+  21 @TheBrodyFile
+  22 @nbcsnl
+  23 @AnnCoulter
+  23 @greta
+  24 @DRUDGE_REPORT
+  25 @WSJ
+  26 @KarlRove
+  26 @MichaelCohen212
+  28 @ABC
+  35 @EricTrump
+  42 @Morning_Joe
+  46 @oreillyfactor
+  56 @seanhannity
+  60 @foxandfriends
+  68 @DanScavino
+  68 @megynkelly
+  80 @JebBush
+ 165 @CNN
+ 203 @FoxNews
+1191 @realDonaldTrump
+</pre>
+
+
+<aside class="notes">
+ack -o '@\w+' realdonaldtrump.csv  |
+  sort | uniq -c | sort | tail -n 15 |
+  pbcopy
+</aside>
+</section>
+<section class="slide">
+
+<div class="meta">
+  <h3 class="title">What words does @realDonaldTrump associate <code>@JebBush</code> with?</h3>
+  <pre class="exp shell">
+ack -io '\w+ \w+ @JebBush \w+' realdonaldtrump.csv
+</pre>
+</div>
+
+<pre class="f9 b9">
+who supported @JebBush are now
+How can @JebBush beat Hillary
+time lightweight @JebBush tried to
+energy candidate @JebBush has wasted
+Sad sack @JebBush has just
+to the @JebBush campaign 3
+idea for @JebBush whose campaign
+sorry for @JebBush and how
+millions about @JebBush when he
+is that @JebBush mother is
+failed candidate @JebBush said that
+just past @JebBush in the
+the ridiculous @JebBush ad about
+idea for @JebBush whose campaign
+leaders like @JebBush allowed 9
+realDonaldTrump doubles @JebBush in New
+
+</pre>
+
+</section>
+<section class="slide">
+
+<div class="meta">
+  <h3 class="title">What words does @realDonaldTrump associate <code>@nyt</code> accounts with?</h3>
+  <pre class="exp shell">
+ack -o '\w+ \w+ @nyt\w+ \w+' realdonaldtrump.csv
+</pre>
+</div>
+
+<pre class="f9 b9">
+the failing @nytimes are
+The failing @nytimes does
+The failing @nytimes should
+at the @nytimes have
+at the @nytimes bought
+The failing @nytimes should
+in the @nytimes states
+of the @nytimes waving
+the false @nytimes story
+did the @nytimes fall
+and the @nytimesworld is
+</pre>
+
+
+<aside class="notes">
+ack -o '\w+ \w+ @nyt\w+ \w+'  realdonaldtrump.csv |
+   tail -n 15 |
+  pbcopy
+</aside>
+</section>
+<section class="slide">
+
+  <h2 class="title">
+    <code>csvcut</code>
+  </h2>
+
+
+  <p>
+    Selectively print columns from a delimited text file.
+  </p>
+
+<pre class="exp shell big" data-trim><code>
+csvcut -c 'column_name_1,column_name_9'
+</code></pre>
+</section>
+<section class="slide">
+</section>
+<section class="slide">
+</section>
+<section class="slide">
 </section>
 <section class="slide">
 </section>

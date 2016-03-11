@@ -1,0 +1,41 @@
+
+<div class="meta">
+  <h3 class="title">Who does realDonaldTrump most frequently mention?</h3>
+  <pre class="exp shell">ack -o '@\w+' realdonaldtrump.csv |
+   sort | uniq -c | sort -n</pre>
+</div>
+
+<pre class="f9 b9">
+  20 @GOP
+  20 @IvankaTrump
+  20 @JoeNBC
+  20 @nytimes
+  20 @politico
+  21 @TheBrodyFile
+  22 @nbcsnl
+  23 @AnnCoulter
+  23 @greta
+  24 @DRUDGE_REPORT
+  25 @WSJ
+  26 @KarlRove
+  26 @MichaelCohen212
+  28 @ABC
+  35 @EricTrump
+  42 @Morning_Joe
+  46 @oreillyfactor
+  56 @seanhannity
+  60 @foxandfriends
+  68 @DanScavino
+  68 @megynkelly
+  80 @JebBush
+ 165 @CNN
+ 203 @FoxNews
+1191 @realDonaldTrump
+</pre>
+
+
+<aside class="notes">
+ack -o '@\w+' realdonaldtrump.csv  |
+  sort | uniq -c | sort | tail -n 15 |
+  pbcopy
+</aside>

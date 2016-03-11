@@ -1,0 +1,11 @@
+<div id="player-trump-template"></div>
+<script>
+  asciinema_player.core.CreatePlayer(
+          'player-trump-template', 'ascii-jsons/trump-hashtags.json',
+          {
+             autoPlay: false, speed: 2, fontSize: '19px',
+             theme: 'monokai',
+             poster: "data:text/plain,$ ack -ho '\w{15,}' | sort | uniq -c | sort -n"
+           }
+        );
+</script>

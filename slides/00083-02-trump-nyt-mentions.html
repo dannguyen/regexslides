@@ -1,0 +1,28 @@
+
+<div class="meta">
+  <h3 class="title">What words does @realDonaldTrump associate <code>@nyt</code> accounts with?</h3>
+  <pre class="exp shell">
+ack -o '\w+ \w+ @nyt\w+ \w+' realdonaldtrump.csv
+</pre>
+</div>
+
+<pre class="f9 b9">
+the failing @nytimes are
+The failing @nytimes does
+The failing @nytimes should
+at the @nytimes have
+at the @nytimes bought
+The failing @nytimes should
+in the @nytimes states
+of the @nytimes waving
+the false @nytimes story
+did the @nytimes fall
+and the @nytimesworld is
+</pre>
+
+
+<aside class="notes">
+ack -o '\w+ \w+ @nyt\w+ \w+'  realdonaldtrump.csv |
+   tail -n 15 |
+  pbcopy
+</aside>

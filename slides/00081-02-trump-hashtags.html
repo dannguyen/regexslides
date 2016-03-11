@@ -1,0 +1,38 @@
+
+<div class="meta">
+  <h3 class="title">realDonaldTrump's most-frequent hashtags?</h3>
+  <pre class="exp shell">ack -o '#\w+' realdonaldtrump.csv |
+   sort | uniq -c | sort -n</pre>
+  <ul class="pseudo">
+    <li>Look for the pattern <code>#\w+</code></li>
+    <li>Print only the match</li>
+    <li>Sort the lines alphabetically</li>
+    <li>Print the count of each unique string</li>
+    <li>Sort the lines numerically</li>
+  </ul>
+</div>
+
+
+
+<div id="player-trump-hashtags"></div>
+<script>
+  asciinema_player.core.CreatePlayer(
+          'player-trump-hashtags', 'ascii-jsons/trump-hashtags.json',
+          {
+             autoPlay: false, speed: 2, fontSize: '19px',
+             theme: 'monokai',
+    poster: "data:text/plain,$ ack -o '#\w+' realdonaldtrump.csv | sort | uniq -c | sort -n"
+           }
+        );
+</script>
+
+
+
+<aside class="notes">
+  <code class="exp shell">
+  ack -o '#\w+' realdonaldtrump.csv |
+   sort |
+   uniq -c |
+   sort -n
+  </code>
+</aside>

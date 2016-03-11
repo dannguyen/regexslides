@@ -2,3 +2,5 @@
 aws s3 cp index.html s3://regex.danwin.com/slides/ --acl public-read
 aws s3 sync css s3://regex.danwin.com/slides/css/ --acl public-read
 aws s3 sync js s3://regex.danwin.com/slides/js/ --acl public-read
+aws s3 sync images s3://regex.danwin.com/slides/images/ --acl public-read
+aws s3 sync ascii-jsons s3://regex.danwin.com/slides/ascii-jsons/ --acl public-read

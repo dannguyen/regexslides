@@ -1,0 +1,25 @@
+
+<div class="meta">
+  <h3 class="title">Who does realDonaldTrump mention?</h3>
+  <pre class="exp">@\w+</pre>
+  <ul class="pseudo">
+    <li>The <code>@</code> character</li>
+    <li>Followed by one-or-more word characters</li>
+  </ul>
+</div>
+
+<pre class="f9 b9">
+707722839684685824,2016-03-10 00:20:48 +0000,realDonaldTrump,&quot;I will be interviewed in a town hall format on <span class="b5"><span class="bold">@FoxNews</span></span> with <span class="b5"><span class="bold">@seanhannity</span></span> at 10pmE. Enjoy!
+707722045224833024,2016-03-10 00:17:39 +0000,realDonaldTrump,I will be giving a lengthy interview to <span class="b5"><span class="bold">@andersoncooper</span></span> tonight at 8pmE from Florida. Watch on <span class="b5"><span class="bold">@CNN</span></span>! #MakeAmericaGreatAgain #Trump2016
+707388018382995456,2016-03-09 02:10:20 +0000,realDonaldTrump,RT <span class="b5"><span class="bold">@RSBNetwork</span></span>: LIVE Stream now: Donald Trump press conference #TrumpTrain #Trump2016 https://t.co/s7WgNXR27A
+707353658883706880,2016-03-08 23:53:48 +0000,realDonaldTrump,&quot;I hear <span class="b5"><span class="bold">@NBCNews</span></span> / <span class="b5"><span class="bold">@WSJ</span></span> came out with another one of their phony polls. While I am leading, they are totally discredited after last S.C. poll&quot;
+707351991807315968,2016-03-08 23:47:11 +0000,realDonaldTrump,RT <span class="b5"><span class="bold">@EricTrump</span></span>: Aloha Hawaii: We would be honored to have your vote! Find your caucus https://t.co/iNgQS80mxX #TrumpWaikiki #Mahalo https://t.co/ggTwDLbSG7
+707226089496690688,2016-03-08 15:26:54 +0000,realDonaldTrump,&quot;&quot;&quot;<span class="b5"><span class="bold">@EricTrump</span></span>: Wishing our father tremendous luck in Michigan, Mississippi, Idaho &amp; Hawaii today! Amazing father! https://t.co/cYpx4eC9W <span class="b5"><span class="bold">@Q</span></span>&quot;&quot;&quot;
+707225181513719808,2016-03-08 15:23:17 +0000,realDonaldTrump,Thank you <span class="b5"><span class="bold">@EricTrump</span></span>! https://t.co/U1iTLmcbAc
+707004752756936704,2016-03-08 00:47:23 +0000,realDonaldTrump,I will be interviewed by <span class="b5"><span class="bold">@SeanHannity</span></span> tonight at 10pm EST on <span class="b5"><span class="bold">@FoxNews</span></span>! Enjoy!
+</pre>
+
+
+<aside class="notes">
+  ack '@\w+' realdonaldtrump.csv  --color | head -n 15 |  ansi2html --body-only | pbcopy
+</aside>

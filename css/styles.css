@@ -1,12 +1,3 @@
-.exp{
-  text-align: left;
-}
-
-
-.reveal .exp code, .reveal code{
-  padding: 8px;
-  background: #444;
-}
 
 
 .reveal h1 code,
@@ -38,4 +29,54 @@ p.excerpt{
 
 .reveal .asciinema-theme-monokai .bg-13 {
   background-color: magenta;
+}
+
+
+.reveal .pseudo{
+  margin-top: 5px;
+  font-size: 18px;
+}
+
+.reveal .pseudo li{
+  display: inline;
+  padding-left: 20px;
+}
+
+.reveal .pseudo li:first-child{
+  padding-left: 0px;
+}
+
+.reveal .pseudo li:before{
+  content: '\2022';
+}
+
+
+.reveal pre{
+  width: 100%;
+}
+
+.reveal pre.exp{
+   background: #444;
+   padding: 10px 0px 10px 35px;
+   margin: 4px auto 8px;
+   font-size: 24px;
+   line-height: 1.1em;
+   width: 100%;
+
+}
+
+.reveal .meta .title{
+  font-size: 35px;
+}
+
+
+
+.reveal .exp code, .reveal code{
+  padding: 8px;
+  background: #444;
+}
+
+
+.reveal .exp.big{
+  font-size:30px;
 }
